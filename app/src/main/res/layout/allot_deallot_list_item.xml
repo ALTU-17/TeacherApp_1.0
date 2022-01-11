@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_margin = "8dp"
+    app:cardCornerRadius = "10dp">
+
+    <RelativeLayout
+        android:padding = "6dp"
+        android:layout_margin="1dp"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content">
+
+        <LinearLayout
+            android:padding = "2dp"
+            android:layout_margin="1dp"
+            android:id = "@+id/lay1"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "vertical"
+            android:layout_toStartOf="@+id/btn_deallot">
+
+            <TextView
+                android:id = "@+id/tv_qbName"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:ellipsize = "end"
+                android:text = "Question Bank Name"
+                android:fontFamily = "@font/opensans_semibold"
+                android:textSize = "17sp"
+                android:textColor = "#CB2447"
+                />
+
+            <RelativeLayout
+                android:layout_margin="1dp"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:padding = "2dp">
+
+                <TextView
+                    android:id = "@+id/tv_Class"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:fontFamily = "@font/spensans_regular"
+                    android:text = "Class : " />
+
+                <TextView
+                    android:id = "@+id/tv_ClassName"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_toEndOf = "@+id/tv_Class"
+                    android:fontFamily = "@font/spensans_regular"
+                    android:text = "1" />
+
+                <TextView
+                    android:id = "@+id/vDivider2"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "20dp"
+                    android:layout_toEndOf = "@+id/tv_ClassName"
+                    android:fontFamily = "sans-serif"
+                    android:text = " | "
+                    android:textColor = "#C7C1C3"
+                    android:textSize = "13sp" />
+
+                <TextView
+                    android:id = "@+id/tv_Subject"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_toEndOf = "@+id/vDivider2"
+                    android:fontFamily = "@font/spensans_regular"
+                    android:text = "Subject : " />
+
+                <TextView
+                    android:id = "@+id/tv_SubjectName"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_toEndOf = "@+id/tv_Subject"
+                    android:fontFamily = "@font/spensans_regular"
+                    android:layout_marginEnd = "10dp"
+                    android:text = "English" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_deallot"
+            android:layout_width = "100dp"
+            android:layout_height = "45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity = "center_vertical"
+            android:layout_marginStart = "10dp"
+            android:background = "@drawable/button_new1"
+            android:text = "Deallot"
+            android:textColor = "#ffffff"
+            android:layout_centerVertical="true"
+            />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

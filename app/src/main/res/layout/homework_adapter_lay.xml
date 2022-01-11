@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/cardshape"
+                android:orientation="vertical">
+
+                <!--1st Row-->
+                <LinearLayout
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="RtlHardcoded">
+
+                    <RelativeLayout
+                        android:id="@+id/relnew1"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/tvnew1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Class :"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:layout_toRightOf="@+id/tvnew1"
+                            android:id="@+id/home_class"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:typeface="sans"
+                            android:text="1A"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/bar1"
+                            android:layout_toRightOf="@+id/home_class"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  | "
+                            android:textSize="13sp"
+                            android:textColor="#C7C1C3"
+                            android:fontFamily="sans-serif"
+                            />
+
+                        <TextView
+                            android:layout_toRightOf="@+id/bar1"
+                            android:id="@+id/home_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="English"
+                            android:textColor="#CB2447"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/bar2"
+                            android:layout_toRightOf="@+id/home_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" |"
+                            android:textSize="13sp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="#C7C1C3"
+                            />
+
+                        <RelativeLayout
+                            android:layout_alignParentEnd="true"
+                            android:layout_toRightOf="@+id/bar2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp">
+
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_toLeftOf="@+id/homeassign_edate"
+                                android:id="@+id/tvCdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Created On: "
+                                android:typeface="sans"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                />
+
+                            <TextView
+                                android:layout_toLeftOf="@+id/homeassign_edate"
+                                android:id="@+id/tvdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Published On: "
+                                android:typeface="sans"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:visibility="gone"/>
+
+                            <TextView
+
+                                android:id="@+id/homeassign_edate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="1dp"
+                                android:text="DD/MM/YYYY"
+                                android:textColor="#7183B9"
+                                android:textSize="12sp"
+                                android:typeface="sans" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text = "@string/submission_date" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <!--2nd & 3rd Row-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="RtlHardcoded">
+
+                    <View
+                        android:id="@+id/lineview"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@drawable/line"/>
+
+
+                    <TextView
+                        android:typeface="sans"
+                        android:id="@+id/noteDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lineview"
+                        android:padding="2pt"
+                        android:maxLength="100"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text = "description goes here..." />
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_marginBottom="7dp"
+                        android:layout_below="@+id/noteDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@drawable/line"/>
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+
+                  </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "@string/submit_on"
+                        android:typeface="sans"
+                        android:textSize="13sp"
+                        android:id="@+id/tvSDate"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/line2"/>
+
+                    <TextView
+                        android:id="@+id/homesubmit_edate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "@string/dd_mm_yyyy"
+                        android:textSize="13sp"
+                        android:typeface="sans"
+                        android:textColor="#7183B9"
+                        android:layout_toEndOf="@+id/tvSDate"
+                        android:layout_below="@+id/line2"
+                        android:layout_toRightOf="@+id/tvSDate" />
+                </RelativeLayout>
+
+                <!--menu option-->
+                <RelativeLayout
+                    android:layout_marginStart="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                                android:id="@+id/threedots1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:contentDescription = "@string/app_name"
+                                android:id="@+id/fabadd"
+                                android:layout_margin="5pt"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/moreoptions"
+                          />
+
+                            <TextView
+                                android:id="@+id/txtviewpublishhmk"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text = "@string/published"
+                                android:textColor="@color/orange"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/fabpublish"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/ic_done_blue"
+                                android:visibility = "gone"
+                                android:contentDescription = "@string/app_name" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/fabdelete"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="20dp"
+                                android:background="@drawable/ic_delete_gray"
+                                android:visibility = "gone"
+                                android:contentDescription = "@string/app_name" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/fabedit"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginStart = "20dp"
+                                android:background="@drawable/ic_edit_24dp"
+                                android:visibility = "gone"
+                                android:contentDescription = "@string/app_name" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!--View Options-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_centerVertical = "true"
+                        android:contentDescription = "@string/app_name"
+                        android:id="@+id/fabviewhmk"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/ic_visibility_24dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_centerVertical = "true"
+                        android:layout_toEndOf = "@+id/fabviewhmk"
+                        android:contentDescription = "@string/app_name"
+                        android:id="@+id/viewdBy"
+                        android:layout_width = "23dp"
+                        android:layout_height = "23dp"
+                        android:layout_marginStart = "10dp"
+                        android:src="@drawable/ic_user_book_reader_solid"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_centerVertical = "true"
+                        android:gravity = "center_vertical"
+                        android:visibility = "gone"
+                        android:id = "@+id/comment_count_layout"
+                        android:layout_toEndOf = "@+id/viewdBy"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "25dp"
+                        android:layout_marginStart = "10dp"
+                        android:orientation = "horizontal">
+
+                        <TextView
+                            android:id = "@+id/tv_parent_comment"
+                            android:textColor = "#000"
+                            android:gravity = "center_vertical"
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginEnd = "3dp"
+                            android:text = "@string/parent_comment"
+                            android:typeface = "sans" />
+
+                        <TextView
+                            android:background = "@drawable/bg_comment_count"
+                            android:id = "@+id/comment_count"
+                            android:layout_gravity = "center"
+                            android:gravity = "center"
+                            android:textStyle = "bold"
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "wrap_content"
+                            android:textColor = "@color/white"
+                            android:text = " 0" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/btn_publish_home"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_delete_home"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_visibility_home"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_edit_home"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

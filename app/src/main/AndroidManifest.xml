@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    package = "in.aceventura.evolvuschool.teacherapp">
+
+    <uses-permission android:name = "android.permission.INTERNET" />
+    <uses-permission android:name = "android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name = "android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name = "android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name = "android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name = "android.permission.CAMERA" />
+    <uses-permission android:name = "android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name = "android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name = "android.hardware.camera"
+        android:required = "true" />
+    <uses-feature android:name = "android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup = "true"
+        android:configChanges = "orientation|screenSize"
+        android:hardwareAccelerated = "false"
+        android:icon = "@drawable/teacherapplogo"
+        android:label = "@string/app_name"
+        android:largeHeap = "true"
+        android:supportsRtl = "true"
+        android:theme = "@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic = "true"
+        android:requestLegacyExternalStorage="true"
+        tools:ignore = "AllowBackup,GoogleAppIndexingWarning"
+        tools:targetApi = "m">
+
+        <activity android:name = ".activities.OnlineExamDashboard"
+            android:label = "Online Exam"
+            android:theme = "@style/AppTheme"/>
+
+        <activity
+            android:name = ".activities.MonitorStudentsListActivity"
+            android:label = "Monitoring Ongoing Exam"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.MonitorOngoingExamActivity"
+            android:label = "Monitoring Ongoing Exam"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".bottombar.MyCalendar"
+            android:label = "Monitoring Ongoing Exam"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.PenPaperEvaluationActivity"
+            android:label = "Question Bank Evaluation"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.ViewQuestionPaperActivity"
+            android:configChanges = "orientation|keyboardHidden|screenSize|locale"
+            android:label = "View Question Bank"
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme"
+            tools:ignore = "LockedOrientationActivity" />
+        <activity
+            android:name = ".activities.AllotQuestionPaperActivity"
+            android:configChanges = "orientation|keyboardHidden|screenSize|locale"
+            android:label = "Allot Question Bank"
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme"
+            tools:ignore = "LockedOrientationActivity" />
+        <activity
+            android:name = ".activities.AllotDeallotActivity"
+            android:configChanges = "orientation|keyboardHidden|screenSize|locale"
+            android:label = "Alloted Question Bank"
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme"
+            tools:ignore = "LockedOrientationActivity" />
+        <activity
+            android:name = ".activities.EditQuestionPaperActivity"
+            android:configChanges = "orientation|keyboardHidden|screenSize|locale"
+            android:label = "Edit Question Bank"
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme"
+            tools:ignore = "LockedOrientationActivity" />
+        <activity
+            android:name = ".activities.UploadQuestionPaperActivity"
+            android:configChanges = "orientation|keyboardHidden|screenSize|locale"
+            android:label = "Upload Question Bank"
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme"
+            tools:ignore = "LockedOrientationActivity" />
+        <activity
+            android:name = ".activities.EvaluationQuestionActivity"
+            android:label = "Question Bank Evaluation"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.EvaluationStudentsListActivity"
+            android:label = "Question Bank Evaluation"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.EvaluationActivity"
+            android:label = "Question Bank Evaluation"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.OnlineExamActivity"
+            android:configChanges = "orientation|keyboardHidden|screenSize|locale"
+            android:label = "Online Exam"
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme"
+            tools:ignore = "LockedOrientationActivity" />
+        <activity
+            android:name = ".activities.HomeworkViewedByActivity"
+            android:label = "Homework Viewed By"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.TeacherNoteViewedByActivity"
+            android:label = "Teacher Note Viewed By"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.StudentsRemarkList"
+            android:label = "Students List for Remarks "
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".adapter.ViewRemarkAttachmentsActivity"
+            android:label = "Remark Details"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.AboutUs"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.ViewNoticeStaffActivity"
+            android:label = "Notice/SMS Staff"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.ViewFullSizePdf"
+            android:label = "Document Viewer"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.NoticeStaffActivity"
+            android:label = "Notice/SMS for Staff"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.forgotpassword"
+            android:theme = "@style/LoginTheme"
+            android:windowSoftInputMode = "adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name = ".activities.LoginActivity"
+            android:label = "@string/app_name"
+            android:theme = "@style/LoginTheme"
+            android:windowSoftInputMode = "adjustResize|stateHidden" />
+        <activity
+            android:name = ".activities.NewLoginPage"
+            android:theme = "@style/LoginTheme"
+            android:windowSoftInputMode = "adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name = "android.intent.action.MAIN" />
+
+                <category android:name = "android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name = ".HomePageDrawerActivity"
+            android:theme = "@style/AppTheme.NoActionBar" />
+        <activity
+            android:name = ".activities.TeachersNoteACtivity"
+            android:label = "Teacher Note"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.CreateTeachernote"
+            android:configChanges = "orientation|keyboardHidden|screenSize|locale"
+            android:label = "Create Teacher Note"
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme"
+            tools:ignore = "LockedOrientationActivity" />
+
+        <provider
+            android:name = "androidx.core.content.FileProvider"
+            android:authorities = "in.aceventura.evolvuschool.teacherapp.fileprovider"
+            android:exported = "false"
+            android:grantUriPermissions = "true">
+            <meta-data
+                android:name = "android.support.FILE_PROVIDER_PATHS"
+                android:resource = "@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name = ".activities.TeacherProfileActivity"
+            android:label = "Teacher Profile"
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme"
+            tools:ignore = "LockedOrientationActivity" />
+        <activity
+            android:name = ".activities.HomeworkActivity"
+            android:label = "Homeworks"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.CreateHomeworkActivity"
+            android:configChanges = "orientation|keyboardHidden|screenSize|locale"
+            android:label = "Create Homework"
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme"
+            tools:ignore = "LockedOrientationActivity" />
+        <activity
+            android:name = ".activities.RemarksActivity"
+            android:label = "Remarks"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.CreateRemarkActivity"
+            android:configChanges = "orientation|keyboardHidden|screenSize|locale"
+            android:label = "Create Remark"
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme"
+            tools:ignore = "LockedOrientationActivity" />
+        <activity
+            android:name = ".activities.NoticeActivity"
+            android:label = "Notice/SMS for Parents"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.StudentInfoActivity"
+            android:label = "Student Information"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.StationaryReqActivity"
+            android:label = "Stationary Requisition"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.CreateSationaryReqActivity"
+            android:label = "Create Stationary Requisition"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.TimeTableActivity"
+            android:label = "TimeTable"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.BookAVailableActivity"
+            android:label = "Book Availability"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.BookAvailListActivity"
+            android:label = "Book Available List"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.BookReqACtivity"
+            android:label = "Book Requisition"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.CreateBookReqACtivity"
+            android:label = "Create Book Requisition" />
+        <activity
+            android:name = ".activities.MyProfileACtivity"
+            android:label = "My Profile"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.MainActivity"
+            android:label = "Attach Notes"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.ChangePasswordActivity"
+            android:label = "Change Password"
+            android:theme = "@style/AppTheme" />
+        <!--
+         ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name = "com.google.android.gms.version"
+            android:value = "@integer/google_play_services_version" />
+
+        <activity
+            android:name = ".activities.ViewTeacherNoteActivity"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.LeaveApplicationActivity"
+            android:label = "Leave Application"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.EditLeaveAPplicationActivity"
+            android:label = "Edit Leave Application"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.CreateLeaveApplicationActivity"
+            android:label = "Create Leave Application"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.ViewTeacherOnlyNoteActivity"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.TeacherNoteListTableACtiity"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.EditTeacherNoteACtivity"
+            android:configChanges = "orientation|keyboardHidden|screenSize|locale"
+            android:label = "Edit Teacher Note"
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme"
+            tools:ignore = "LockedOrientationActivity" />
+        <activity
+            android:name = ".activities.EditHomeworkActivity"
+            android:configChanges = "orientation|keyboardHidden|screenSize|locale"
+            android:label = "Edit Homework"
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme"
+            tools:ignore = "LockedOrientationActivity" />
+        <activity
+            android:name = ".activities.EditRemarkActivity"
+            android:configChanges = "orientation|keyboardHidden|screenSize|locale"
+            android:label = "Edit Remark"
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme"
+            tools:ignore = "LockedOrientationActivity" />
+        <activity
+            android:name = ".activities.ClassTimetable"
+            android:configChanges = "orientation|keyboardHidden"
+            android:screenOrientation = "landscape"
+            android:theme = "@style/AppTheme"
+            tools:ignore = "LockedOrientationActivity" />
+        <activity
+            android:name = ".activities.ViewHomeworkActivity"
+            android:label = "View Homework"
+            android:theme = "@style/AppTheme"
+            android:windowSoftInputMode = "stateAlwaysHidden" />
+        <activity android:name = ".ViewrmkActivity" />
+        <activity
+            android:name = ".activities.StudentViewActivity"
+            android:label = "Student Profile"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.ParentActivity"
+            android:label = "Parent Information"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.ViewNoticeActivity"
+            android:label = "View Notices"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.DailyAttendanceActivity"
+            android:label = "Daily Attendance"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.DailyAttendence"
+            android:label = "Daily Attendance"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.ViewAttendenceActivity"
+            android:label = "View Attendance"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.ViewFullSizeImage"
+            android:label = "Attachment"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.CheckLeaveBalanceActivity"
+            android:label = "Leave Balance"
+            android:theme = "@style/AppTheme" />
+        <activity android:name = ".activities.ViewClassTeacherNotesACtivity" />
+        <activity
+            android:name = ".activities.ViewNotes"
+            android:label = "View Notes"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.ViewHmkACtivity"
+            android:label = "View Homework"
+            android:theme = "@style/AppTheme" />
+        <activity
+            android:name = ".activities.MonthlyAttendanceACtivity"
+            android:label = "Monthly Attendance"
+            android:theme = "@style/AppTheme" />
+    </application>
+
+</manifest>

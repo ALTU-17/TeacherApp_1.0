@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@drawable/mainbckgrnd"
+    android:orientation = "vertical">
+
+    <include
+        android:id="@+id/icd_tb_homeworkdetails"
+        layout="@layout/header_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_gravity = "center"
+        android:layout_margin = "5pt"
+        android:layout_below="@+id/icd_tb_homeworkdetails"
+        app:cardCornerRadius = "15dp">
+
+        <ScrollView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content">
+
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_margin = "2pt"
+                android:orientation = "vertical"
+                android:padding = "2pt">
+
+                <LinearLayout
+                    android:layout_width = "match_parent"
+                    android:layout_height = "match_parent"
+                    android:orientation = "vertical">
+
+
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        android:orientation = "vertical">
+
+
+                        <LinearLayout
+                            android:layout_width = "match_parent"
+                            android:layout_height = "match_parent"
+                            android:orientation = "vertical"
+                            android:weightSum = "2">
+
+                            <!--Select Examination-->
+                            <RelativeLayout
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:layout_margin = "5dp"
+                                android:layout_weight = "1">
+
+                                <TextView
+                                    android:id = "@+id/man1"
+                                    android:layout_width = "wrap_content"
+                                    android:layout_height = "wrap_content"
+                                    android:layout_marginTop = "10dp"
+                                    android:layout_marginBottom = "2dp"
+                                    android:text = "*"
+                                    android:textColor = "@color/Red"
+                                    android:textSize = "15sp"
+                                    android:visibility = "visible" />
+
+                                <LinearLayout
+                                    android:id = "@+id/subLay1"
+                                    android:layout_width = "wrap_content"
+                                    android:layout_height = "wrap_content"
+                                    android:layout_marginStart = "5dp"
+                                    android:layout_marginTop = "5dp"
+                                    android:layout_toEndOf = "@+id/man1"
+                                    android:orientation = "horizontal">
+
+                                    <TextView
+                                        android:layout_width = "match_parent"
+                                        android:layout_height = "wrap_content"
+                                        android:layout_marginTop = "5dp"
+                                        android:text = "@string/select_examination"
+                                        android:textColor = "@color/black"
+                                        android:textSize = "15sp" />
+
+                                </LinearLayout>
+
+                                <Spinner
+                                    android:id = "@+id/sp_select_exam"
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "30dp"
+                                    android:layout_below = "@+id/subLay1"
+                                    android:layout_gravity = "center"
+                                    android:layout_marginStart = "10dp"
+                                    android:layout_marginTop = "5dp"
+                                    android:autofillHints = "Select Examination"
+                                    android:gravity = "center"
+                                    android:spinnerMode = "dropdown" />
+
+                                <View
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "1dp"
+                                    android:layout_below = "@id/sp_select_exam"
+                                    android:layout_alignStart = "@+id/sp_select_exam"
+                                    android:layout_alignParentEnd = "@+id/sp_select_exam"
+                                    android:background = "@drawable/line" />
+
+                            </RelativeLayout>
+
+                            <!--Select Class & Subject-->
+                            <RelativeLayout
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:layout_margin = "5dp"
+                                android:orientation = "horizontal">
+
+                                <TextView
+                                    android:id = "@+id/man2"
+                                    android:layout_width = "wrap_content"
+                                    android:layout_height = "wrap_content"
+                                    android:layout_marginTop = "10dp"
+                                    android:layout_marginBottom = "2dp"
+                                    android:text = "*"
+                                    android:textColor = "@color/Red"
+                                    android:textSize = "15sp"
+                                    android:visibility = "visible" />
+
+                                <LinearLayout
+                                    android:id = "@+id/subLay2"
+                                    android:layout_width = "wrap_content"
+                                    android:layout_height = "wrap_content"
+                                    android:layout_marginStart = "5dp"
+                                    android:layout_marginTop = "5dp"
+                                    android:layout_toEndOf = "@+id/man2"
+                                    android:orientation = "horizontal">
+
+                                    <TextView
+                                        android:layout_width = "match_parent"
+                                        android:layout_height = "wrap_content"
+                                        android:layout_marginTop = "5dp"
+                                        android:text = "@string/select_class_and_subject"
+                                        android:textColor = "@color/black"
+                                        android:textSize = "15sp" />
+
+                                </LinearLayout>
+
+                                <Spinner
+                                    android:id = "@+id/sp_select_class_subject"
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "30dp"
+                                    android:layout_below = "@+id/subLay2"
+                                    android:layout_gravity = "center"
+                                    android:layout_marginStart = "10dp"
+                                    android:layout_marginTop = "5dp"
+                                    android:autofillHints = "Select Class"
+                                    android:gravity = "center"
+                                    android:spinnerMode = "dropdown" />
+
+                                <View
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "1dp"
+                                    android:layout_below = "@id/sp_select_class_subject"
+                                    android:layout_alignStart = "@+id/sp_select_class_subject"
+                                    android:layout_alignParentEnd = "@+id/sp_select_class"
+                                    android:background = "@drawable/line" />
+
+                            </RelativeLayout>
+
+                            <!--Select Question Bank-->
+                            <RelativeLayout
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:layout_margin = "5dp"
+                                android:layout_weight = "1">
+
+                                <TextView
+                                    android:id = "@+id/man3"
+                                    android:layout_width = "wrap_content"
+                                    android:layout_height = "wrap_content"
+                                    android:layout_marginTop = "10dp"
+                                    android:layout_marginBottom = "2dp"
+                                    android:text = "*"
+                                    android:textColor = "@color/Red"
+                                    android:textSize = "15sp"
+                                    android:visibility = "visible" />
+
+                                <LinearLayout
+                                    android:id = "@+id/subLay3"
+                                    android:layout_width = "wrap_content"
+                                    android:layout_height = "wrap_content"
+                                    android:layout_marginStart = "5dp"
+                                    android:layout_marginTop = "5dp"
+                                    android:layout_toEndOf = "@+id/man3"
+                                    android:orientation = "horizontal">
+
+                                    <TextView
+                                        android:layout_width = "match_parent"
+                                        android:layout_height = "wrap_content"
+                                        android:layout_marginTop = "5dp"
+                                        android:text = "Select Question Bank"
+                                        android:textColor = "@color/black"
+                                        android:textSize = "15sp" />
+
+                                </LinearLayout>
+
+                                <Spinner
+                                    android:id = "@+id/sp_select_quesBank"
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "30dp"
+                                    android:layout_below = "@+id/subLay3"
+                                    android:layout_gravity = "center"
+                                    android:layout_marginStart = "10dp"
+                                    android:layout_marginTop = "5dp"
+                                    android:autofillHints = "Select Subject"
+                                    android:gravity = "center"
+                                    android:spinnerMode = "dropdown" />
+
+                                <View
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "1dp"
+                                    android:layout_below = "@id/sp_select_quesBank"
+                                    android:layout_alignStart = "@+id/sp_select_quesBank"
+                                    android:layout_alignParentEnd = "@+id/sp_select_quesBank"
+                                    android:background = "@drawable/line" />
+
+                            </RelativeLayout>
+
+
+                            <!--Button-->
+                            <LinearLayout
+                                android:layout_width = "wrap_content"
+                                android:layout_height = "wrap_content"
+                                android:layout_gravity = "center"
+                                android:layout_margin = "5dp"
+                                android:layout_marginTop = "20dp"
+                                android:orientation = "horizontal"
+                                android:weightSum = "2">
+
+                                <Button
+                                    android:id = "@+id/search"
+                                    android:layout_width = "150dp"
+                                    android:layout_height = "50dp"
+                                    android:layout_gravity = "center"
+                                    android:layout_margin = "5dp"
+                                    android:layout_weight = "1"
+                                    android:background = "@drawable/button_effect6"
+                                    android:gravity = "center"
+                                    android:text = "Search"
+                                    android:textColor = "#ffffff"
+                                    android:textSize = "17sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <include
+        android:id="@+id/bb_bookavailability"
+        layout="@layout/bottom_bar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
+
+    <!--#4692C7-->

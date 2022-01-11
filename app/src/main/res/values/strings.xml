@@ -1,0 +1,133 @@
+<resources>
+    <string name = "app_name">TeacherApp</string>
+
+    <string name = "navigation_drawer_open">Open navigation drawer</string>
+    <string name = "navigation_drawer_close">Close navigation drawer</string>
+
+    <string name = "action_settings">Logout</string>
+
+
+    <string name = "parentname"><font size = "20">Parent Information</font></string>
+    <string name = "hsc">HSc</string>
+    <string name = "b_com">B.Com</string>
+    <string name = "bca">BCA</string>
+    <string name = "be">BE</string>
+    <string name = "b_sc">B.Sc</string>
+    <string name = "m_a">M.A</string>
+    <string name = "m_sc">M.Sc</string>
+    <string name = "m_phil">M.Phil</string>
+    <string name = "dce">DCE</string>
+    <string name = "b_lis">B.LIS</string>
+    <string name = "mse">MSE</string>
+    <string name = "mca">MCA</string>
+    <string name = "mba">MBA</string>
+    <string name = "b_a">B.A</string>
+    <string name = "bcs">BCS</string>
+    <string name = "bpharm">BPharm</string>
+    <string name = "m_com">M Com</string>
+    <string name = "m_lis">M.LIS</string>
+    <string name = "pgdbm">PGDBM</string>
+    <string name = "imagefile">Imagefile</string>
+    <string name = "evolvu_smart_teacher_app_allows_teachers_to_powerfully_manage_their_school_work_from_within_their_mobile_devices_thereby_giving_them_more_freedom_for_other_tasks">Allows teachers to powerfully manage their school work from within their mobile devices thereby giving them more freedom for other tasks.</string>
+    <string name = "we_thank_you_teachers_for_your_support_and_helping_us_develop_a_better_app">We thank you, Teachers, for your support and helping us develop a better app.</string>
+    <string name = "send_your_new_feature_request_on_contact_aceventura_in">Send your new feature request on contact@aceventura.in</string>
+    <string name = "credit_goes_to_our_incredible_team_of_designer_solution_architect_project_manager_team_managers_and_developers">Credit goes to our incredible team of Designer, Solution Architect, Project Manager, Team Managers and Developers.</string>
+    <string name = "rate_us_playstorelink_email_us_support_share_app_share"><![CDATA[Rate us <playstorelink> - email us <aceventuraservices@gmail.com> - share app <share>]]></string>
+    <string name = "follow_us_on">Follow us on</string>
+    <string name = "rate_us">Rate Us</string>
+    <string name = "aceventuraservices_gmail_com">  aceventuraservices@gmail.com</string>
+    <string name = "email">Email - </string>
+    <string name = "contact_aceventura_in">  contact@aceventura.in</string>
+    <string name = "send_your_new_feature_request_on">Send your new feature request on</string>
+    <string name = "present_students">Present Students</string>
+    <string name = "absent_students">Absent Students</string>
+    <string name = "b_music_n_dance">B.Music n Dance</string>
+    <string name = "homework">Homework</string>
+    <string name = "filename_pdf">Filename.pdf</string>
+    <string name = "search_here">Search here</string>
+    <string name = "no_records_found">No Records Found</string>
+    <string name = "class_teacher_of">Class Teacher of :</string>
+    <string name = "teacher_s_name">Teacher\'s Name</string>
+    <string name = "password_can_be_8_to_20_characters_long_must_contain_a_number_and_a_special_character_like_amp"><![CDATA[Password can be 8 to 20 characters long, must contain a number and a special character like !,@,#,$,^,&,*]]></string>
+    <string name = "select_student">Select Student</string>
+    <string name = "submission_date">Submission Date:</string>
+    <string name = "submit_on">Submit On :</string>
+    <string name = "dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name = "published">Published</string>
+    <string name = "parent_comment">Parent Comment </string>
+    <string name = "re_enter_new_password">Re-enter new password</string>
+    <string name = "new_password">New password</string>
+    <string name = "current_password">Current password</string>
+    <string name = "what_is_your_mother_s_name">What is your mother\'s name?</string>
+    <string name = "what_is_your_mother_s_maiden_name">What is your mother\'s maiden name?</string>
+    <string name = "select_examination">Select Examination</string>
+    <string name = "select_class">Select Class</string>
+    <string name = "select_subject">Select Subject</string>
+    <string name = "question_bank_name">Question Bank Name</string>
+    <string name = "weightage">Weightage</string>
+    <string name = "add_notes">Add Notes</string>
+    <string name = "add_attachments">Add Attachments</string>
+    <string name = "save_amp_complete"><![CDATA[Save & Complete]]></string>
+    <string name = "exam_instructions">Exam Instructions</string>
+    <string name = "select_class_and_subject">Select Class and Subject</string>
+    <string name = "allot_deallot">Allot / Deallot \n Question Bank</string>
+    <string name = "monitor_ongoing_exam">Monitor Ongoing \n Exam</string>
+
+
+    <string-array name = "Class">
+        <item>Select</item>
+    </string-array>
+
+
+    <string-array name = "Sub">
+        <item>my</item>
+
+    </string-array>
+
+
+    <string-array name = "assigned">
+        <item>Assigned</item>
+        <item>Complete</item>
+        <item>Assigned</item>
+        <item>Partial</item>
+
+    </string-array>
+
+    <string-array name = "ProfessionalQualification">
+        <item> Select Professional Qualification</item>
+        <item>TTC</item>
+        <item>D.Ed</item>
+        <item>B.Ed</item>
+        <item>B.P.Ed</item>
+        <item>M.P.Ed</item>
+        <item>NA</item>
+    </string-array>
+
+
+    <string-array name = "TrainingStatus">
+        <item>Select TrainingStatus</item>
+        <item>Trained-PGT</item>
+        <item>Trained-TGT</item>
+        <item>Untrained</item>
+        <item>NA</item>
+    </string-array>
+
+
+    <string-array name = "Gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name = "BloodGroup">
+        <item>Select BloodGroup</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+</resources>

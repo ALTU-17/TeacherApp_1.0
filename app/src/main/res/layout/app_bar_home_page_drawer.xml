@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:layout_gravity = "center">
+
+    <RelativeLayout
+        android:id = "@+id/re1"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id = "@+id/toolbar"
+            android:layout_width = "match_parent"
+            android:layout_height = "60dp"
+            android:background = "#CB2447"
+            app:popupTheme = "@style/AppTheme.PopupOverlay" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:layout_marginTop = "60dp"
+        android:background = "#CB2447">
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content" />
+
+        <androidx.cardview.widget.CardView
+            android:id = "@+id/card"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "15dp"
+            android:layout_marginBottom = "15dp"
+            android:padding = "5dp"
+            app:cardCornerRadius = "10dp">
+
+            <RelativeLayout
+                android:id = "@+id/teacherDetails"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_gravity = "center"
+                android:padding = "5dp">
+
+                <ImageView
+                    android:id = "@+id/tlogo"
+                    android:layout_width = "60dp"
+                    android:layout_height = "60dp"
+                    android:layout_centerVertical = "true"
+                    android:layout_marginStart = "10dp"
+                    android:layout_marginLeft = "10dp"
+                    android:padding = "5dp"
+                    tools:ignore = "RtlHardcoded" />
+
+                <TextView
+                    android:id = "@+id/tName"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_alignTop = "@+id/tlogo"
+                    android:layout_marginStart = "5dp"
+                    android:layout_marginLeft = "5dp"
+                    android:layout_marginTop = "8dp"
+                    android:layout_toEndOf = "@+id/tlogo"
+                    android:layout_toRightOf = "@+id/tlogo"
+                    android:text = "@string/teacher_s_name"
+                    android:textColor = "#000000"
+                    android:textSize = "17sp"
+                    tools:ignore = "RtlHardcoded" />
+
+                <TextView
+                    android:id = "@+id/tvClass"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_below = "@+id/tName"
+                    android:layout_marginStart = "5dp"
+                    android:layout_marginLeft = "5dp"
+                    android:layout_marginTop = "8dp"
+                    android:layout_toRightOf = "@+id/tlogo"
+                    android:text = "@string/class_teacher_of"
+                    android:textColor = "#000000" />
+
+                <TextView
+                    android:id = "@+id/className"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_alignTop = "@id/tvClass"
+                    android:layout_alignBottom = "@id/tvClass"
+                    android:layout_marginStart = "5dp"
+                    android:layout_toEndOf = "@+id/tvClass"
+                    android:textColor = "#000000" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id = "@+id/act"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_below = "@+id/card"
+            android:layout_alignParentStart = "true"
+            android:layout_alignParentLeft = "true"
+            android:layout_marginStart = "15dp"
+            android:layout_marginLeft = "15dp"
+            android:background = "@drawable/act" />
+
+        <include
+            layout = "@layout/content_home_page_drawer"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_below = "@+id/act" />
+
+
+        <include
+            android:id="@+id/bb_bookavailability"
+            layout="@layout/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:visibility = "gone">
+
+        <LinearLayout
+            android:id = "@+id/linerproductdetails"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_alignParentBottom = "true"
+            android:gravity = "center"
+            android:orientation = "vertical">
+
+            <LinearLayout
+                android:id = "@+id/llmenu1"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:background = "@drawable/edittextstyle"
+                android:orientation = "horizontal"
+                android:weightSum = "2">
+
+                <TextView
+                    android:id = "@+id/btnWhatsapp"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "50dp"
+                    android:layout_gravity = "center"
+                    android:layout_weight = "1.3"
+                    android:background = "@color/white"
+                    android:drawableLeft = "@drawable/ic_person_outline_black_24dp"
+                    android:gravity = "center"
+                    android:text = "My Profile"
+
+                    />
+
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "50dp"
+                    android:layout_gravity = "center"
+                    android:layout_weight = "1"
+                    android:background = "@color/white"
+                    android:drawableLeft = "@drawable/ic_menu_manage"
+                    android:gravity = "center"
+                    android:text = "Change Password" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

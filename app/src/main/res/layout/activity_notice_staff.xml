@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbckgrnd">
+
+    <include
+        android:id="@+id/icd_tb_homeworkdetails"
+        layout="@layout/header_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bb_bookavailability"
+        android:layout_below="@+id/icd_tb_homeworkdetails"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date: "
+                android:visibility="gone"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:padding="5dp"
+                android:layout_margin="2dp"
+                android:layout_below="@+id/dt"
+                android:id="@+id/nDate"
+                android:drawableEnd="@drawable/ic_date_range_black_24dp"
+                android:drawableRight="@drawable/ic_date_range_black_24dp"
+                android:hint="Select  Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                />
+            <View
+                android:layout_alignParentRight="@+id/nDate"
+                android:layout_alignStart="@+id/nDate"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c0c0c0"
+                android:layout_below="@id/nDate"
+                android:layout_alignLeft="@+id/nDate"
+                android:layout_alignParentEnd="@+id/nDate" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="url"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:id="@+id/l1">
+
+            <TextView
+                android:id="@+id/nodata"
+                android:text="No Records Found"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycleridnotice1">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/l2">
+
+            <TextView
+                android:id="@+id/nodata1"
+                android:text="No Records Found"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycleridnotice2">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/addtoexcel"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bb_bookavailability"
+        layout="@layout/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

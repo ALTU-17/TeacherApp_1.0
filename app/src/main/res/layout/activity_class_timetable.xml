@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+          >
+
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/leftroundborder">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="101dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="1dp"
+                            android:background="#616161"
+                            android:gravity="center"
+                            android:paddingBottom="13dp"
+                            android:paddingTop="13dp"
+                            android:text="Period"
+                            android:textColor="#ffffff"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="1dp"
+                            android:background="#616161"
+                            android:gravity="center"
+                            android:paddingBottom="13dp"
+                            android:paddingTop="13dp"
+                            android:text="Monday"
+                            android:textColor="#ffffff"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="1dp"
+                            android:background="#616161"
+                            android:gravity="center"
+                            android:paddingBottom="13dp"
+                            android:paddingTop="13dp"
+                            android:text="Tuesday"
+                            android:textColor="#ffffff"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="1dp"
+                            android:background="#616161"
+                            android:gravity="center"
+                            android:paddingBottom="13dp"
+                            android:paddingTop="13dp"
+                            android:text="Wednesday"
+                            android:textColor="#ffffff"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="1dp"
+                            android:background="#616161"
+                            android:gravity="center"
+                            android:paddingBottom="13dp"
+                            android:paddingTop="13dp"
+                            android:text="Thursday"
+                            android:textColor="#ffffff"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="1dp"
+                            android:background="#616161"
+                            android:gravity="center"
+                            android:paddingBottom="13dp"
+                            android:paddingTop="13dp"
+                            android:text="Friday"
+                            android:textColor="#ffffff"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="103dp"
+                            android:layout_height="wrap_content"
+                            android:background="#616161"
+                            android:gravity="center"
+                            android:paddingBottom="13dp"
+                            android:paddingTop="13dp"
+                            android:text="Saturday"
+                            android:textColor="#ffffff"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/timetable_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/leftroundborder"
+                android:dividerHeight="0dp" />
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>
+
+

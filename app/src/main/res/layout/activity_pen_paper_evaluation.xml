@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@drawable/mainbckgrnd"
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    tools:context = ".activities.PenPaperEvaluationActivity"
+    >
+
+
+    <include
+        android:id="@+id/icd_tb_homeworkdetails"
+        layout="@layout/header_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" />
+<ScrollView
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:layout_below="@+id/icd_tb_homeworkdetails"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_margin = "10dp"
+        android:background = "@drawable/cardshape"
+        android:orientation = "vertical"
+        android:padding = "10dp">
+
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content">
+
+            <TextView
+                android:id = "@+id/exam_name"
+                android:layout_width = "150dp"
+                android:layout_height = "wrap_content"
+                android:layout_marginEnd = "10dp"
+                android:fontFamily = "@font/opensans_semibold"
+                android:text = "Term 1"
+                android:textColor = "@color/pink"
+                android:textSize = "18sp"
+                android:textStyle = "bold" />
+
+
+            <TextView
+                android:id = "@+id/subject_name"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginEnd = "10dp"
+                android:layout_toStartOf = "@+id/class_name"
+                android:fontFamily = "@font/spensans_regular"
+                android:text = "Hindi"
+                android:textSize = "17sp" />
+
+            <TextView
+                android:id = "@+id/class_name"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_alignParentEnd = "true"
+                android:fontFamily = "@font/spensans_regular"
+                android:text = "(Class 7)"
+                android:textSize = "17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "8dp">
+
+
+            <TextView
+                android:layout_alignParentStart="true"
+                android:id = "@+id/marks"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginEnd = "10dp"
+                android:fontFamily = "@font/spensans_regular"
+                android:text = "Weightage"
+                android:textSize = "17sp" />
+        </RelativeLayout>
+
+
+        <!--Download question_paper list-->
+
+        <TextView
+            android:id = "@+id/impLinksLabel"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "15dp"
+            android:fontFamily = "@font/opensans_semibold"
+            android:padding = "3dp"
+            android:text = "Question Papers :"
+            android:textColor = "@color/black"
+            android:textSize = "17sp"
+            android:textStyle = "bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id = "@+id/rv_quesPaper"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "10dp"
+            android:layout_marginBottom = "10dp"
+            android:padding = "3dp"
+
+            />
+
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "15dp"
+            android:fontFamily = "@font/opensans_semibold"
+            android:padding = "3dp"
+            android:text = " Answer Papers :"
+            android:textColor = "@color/black"
+            android:textSize = "17sp"
+            android:textStyle = "bold" />
+
+        <!-- Answer_papers list-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id = "@+id/rv_ansPaper"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "10dp"
+            android:layout_marginBottom = "10dp"
+            android:padding = "3dp"
+            />
+
+
+        <LinearLayout
+            android:padding="3dp"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "horizontal">
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "match_parent"
+                android:text="Enter Marks :- "
+                android:textSize="17sp"
+                android:layout_marginTop="15dp"
+                android:fontFamily = "@font/opensans_semibold"
+                android:textColor = "@color/black"
+
+                />
+
+            <EditText
+                android:id="@+id/marksbyteacher"
+                android:layout_width = "50dp"
+                android:layout_height = "50dp"
+                android:textSize="17sp"
+                android:inputType="numberDecimal"
+                android:gravity="center_horizontal|center_vertical"
+                android:importantForAutofill = "no"
+                android:maxLength="3"
+                tools:ignore = "LabelFor" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "30dp"
+            android:layout_marginBottom= "15dp"
+            >
+
+            <Button
+                android:id = "@+id/btn_save_exam"
+                android:layout_width = "120dp"
+                android:layout_height = "45dp"
+                android:layout_gravity = "center_horizontal"
+                android:background = "@drawable/button_new1"
+                android:fontFamily = "@font/spensans_regular"
+                android:text = "Save"
+                android:textSize = "18sp"
+                android:textColor = "#ffffff" />
+
+            <ProgressBar
+                android:id = "@+id/pb_saveExam"
+                android:layout_width = "25dp"
+                android:layout_height = "25dp"
+                android:layout_gravity = "center_horizontal"
+                android:visibility = "gone" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@drawable/mainbckgrnd">
+
+
+    <include
+        android:id="@+id/icd_tb_homeworkdetails"
+        layout="@layout/header_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" />
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:layout_below="@+id/icd_tb_homeworkdetails"
+        android:layout_above="@+id/bb_bookavailability"
+        android:layout_margin = "8dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:layout_gravity = "center"
+            android:layout_margin = "5dp"
+            app:cardCornerRadius = "15dp">
+
+            <ScrollView
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent">
+
+                <LinearLayout
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_margin = "8dp"
+                    android:orientation = "vertical">
+
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:layout_marginTop = "20dp"
+                        android:layout_marginBottom = "10dp"
+                        android:orientation = "horizontal">
+                        <TextView
+                            android:layout_width = "100dp"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginStart = "5dp"
+                            android:layout_marginBottom = "2dp"
+                            android:text = "Staff Name :"
+                            android:textColor = "#000" />
+                        <TextView
+                            android:id = "@+id/staffnametxt"
+                            android:layout_width = "0dp"
+                            android:layout_height = "wrap_content"
+                            android:layout_weight = "1"
+                            android:textColor = "#000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:layout_marginBottom = "10dp"
+                        android:orientation = "vertical">
+
+                        <!--Spinner-->
+                        <LinearLayout
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:orientation = "vertical">
+
+                            <LinearLayout
+                                android:layout_width = "wrap_content"
+                                android:layout_height = "wrap_content"
+                                android:orientation = "horizontal">
+
+                                <TextView
+                                    android:id = "@+id/textView4"
+                                    android:layout_width = "wrap_content"
+                                    android:layout_height = "wrap_content"
+                                    android:text = "*"
+                                    android:textColor = "@color/Red" />
+
+                                <TextView
+                                    android:id = "@+id/textViewName"
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "wrap_content"
+                                    android:layout_margin = "5dp"
+                                    android:layout_marginStart = "5dp"
+                                    android:layout_marginBottom = "2dp"
+                                    android:text = "Leave Type"
+                                    android:textColor = "#000"
+                                    android:textSize = "15sp" />
+
+
+                            </LinearLayout>
+
+                            <Spinner
+                                android:id = "@+id/leavetypeSpin"
+                                android:layout_width = "match_parent"
+                                android:layout_height = "30dp"
+                                android:layout_gravity = "center"
+                                android:layout_margin = "8dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginTop = "10dp"
+                            android:layout_marginBottom = "10dp"
+                            android:orientation = "vertical">
+
+                            <LinearLayout
+                                android:layout_width = "wrap_content"
+                                android:layout_height = "wrap_content"
+                                android:orientation = "horizontal">
+
+                                <TextView
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "wrap_content"
+                                    android:text = "*"
+                                    android:textColor = "@color/Red" />
+
+                                <TextView
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "wrap_content"
+                                    android:layout_marginLeft = "5dp"
+                                    android:layout_marginBottom = "2dp"
+                                    android:text = "Leave Start Date"
+                                    android:textColor = "#000"
+                                    android:textSize = "15sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id = "@+id/leaveStartDatetxt"
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginTop = "5dp"
+                            android:layout_marginBottom = "10dp"
+                            android:drawableEnd = "@drawable/ic_date_range_black_24dp"
+                            android:drawablePadding = "10dp"
+                            android:focusable = "false"
+                            android:hint = " Start Date"
+                            android:inputType = "textMultiLine"
+                            android:maxHeight = "70dp"
+                            android:padding = "7dp"
+                            android:scrollbars = "vertical"
+                            android:textSize = "15sp" />
+
+                        <LinearLayout
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginTop = "10dp"
+                            android:layout_marginBottom = "10dp"
+                            android:orientation = "vertical">
+
+                            <LinearLayout
+                                android:layout_width = "wrap_content"
+                                android:layout_height = "wrap_content"
+                                android:orientation = "horizontal">
+
+                                <TextView
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "wrap_content"
+                                    android:text = "*"
+                                    android:textColor = "@color/Red" />
+
+                                <TextView
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "wrap_content"
+                                    android:layout_marginStart = "5dp"
+                                    android:layout_marginBottom = "2dp"
+                                    android:text = "Leave End Date"
+                                    android:textColor = "#000"
+                                    android:textSize = "15sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id = "@+id/leaveEndDatetxt"
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginTop = "5dp"
+                            android:layout_marginBottom = "10dp"
+                            android:drawableEnd = "@drawable/ic_date_range_black_24dp"
+                            android:drawablePadding = "10dp"
+                            android:focusable = "false"
+                            android:hint = "End Date"
+                            android:inputType = "textMultiLine"
+                            android:maxHeight = "70dp"
+                            android:padding = "7dp"
+                            android:scrollbars = "vertical"
+                            android:textSize = "15sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:layout_marginTop = "10dp"
+                        android:layout_marginBottom = "10dp"
+                        android:orientation = "vertical">
+
+                        <LinearLayout
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "wrap_content"
+                            android:orientation = "horizontal">
+
+                            <TextView
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:text = "*"
+                                android:textColor = "@color/Red" />
+
+                            <TextView
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:layout_marginLeft = "5dp"
+                                android:layout_marginBottom = "2dp"
+                                android:text = "Days"
+                                android:textColor = "#000"
+                                android:textSize = "15sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id = "@+id/daysLeave"
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginTop = "5dp"
+                            android:gravity = "top"
+                            android:hint = "No.of days"
+                            android:inputType = "numberDecimal"
+                            android:maxHeight = "70dp"
+                            android:padding = "7dp"
+                            android:maxLength="3"
+                            android:minLines="1"
+                            android:scrollbars = "vertical"
+                            android:textSize = "15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:layout_marginTop = "10dp"
+                        android:layout_marginBottom = "10dp"
+                        android:orientation = "vertical">
+
+                        <LinearLayout
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "wrap_content"
+                            android:orientation = "horizontal">
+
+
+                            <TextView
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:layout_marginStart = "5dp"
+                                android:layout_marginBottom = "2dp"
+                                android:text = "Reason"
+                                android:textColor = "#000"
+                                android:textSize = "15sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id = "@+id/reasonLeave"
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginTop = "5dp"
+                            android:gravity = "top"
+                            android:hint = "Reason of Leave"
+                            android:maxHeight = "70dp"
+                            android:padding = "10dp"
+                            android:scrollbars = "vertical"
+                            android:textSize = "15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "60dp"
+                        android:layout_gravity = "center"
+                        android:layout_margin = "3pt"
+                        android:layout_marginTop = "30dp"
+                        android:layout_marginBottom = "20dp"
+                        android:gravity = "center"
+                        android:orientation = "horizontal"
+                        android:weightSum = "2">
+
+                        <Button
+                            android:id = "@+id/saveleave"
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "match_parent"
+                            android:layout_weight = "1"
+                            android:background = "@drawable/save"
+                            android:gravity = "center" />
+
+                        <Button
+                            android:id = "@+id/resetleave"
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "match_parent"
+                            android:layout_weight = "1"
+                            android:background = "@drawable/reset"
+                            android:gravity = "center" />
+
+
+                    </LinearLayout>
+
+
+                    <ProgressBar
+                        android:id = "@+id/progressBar"
+                        android:layout_width = "50dp"
+                        android:layout_height = "50dp"
+                        android:layout_gravity = "center" />
+
+
+                </LinearLayout>
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bb_bookavailability"
+        layout="@layout/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

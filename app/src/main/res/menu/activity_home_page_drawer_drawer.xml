@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@mipmap/ic_user"
+            android:title="My Profile" />
+
+    </group>
+    <item android:title="View">
+        <menu>
+
+            <item
+                android:id="@+id/nav_bal"
+                android:icon="@drawable/ic_check_black_24dp"
+                android:title="Leave Balance"
+                />
+
+
+            <item
+                android:id="@+id/nav_viewnotes"
+                android:icon="@drawable/iconsnotes"
+                android:visible="true"
+                android:title="Notes" />
+
+            <item
+                android:id="@+id/nav_viewhmk"
+                android:icon="@drawable/hw"
+                android:visible="true"
+                android:title="Homework" />
+
+            <item
+                android:id="@+id/nav_viewCLassNotes"
+                android:icon="@drawable/iconhomework"
+                android:visible="true"
+                android:title="Notice to Class" />
+
+            <item
+                android:id="@+id/nav_attendence"
+                android:icon="@drawable/ic_date_range_black_24dp"
+                android:title="Daily Attendence" />
+
+        </menu>
+    </item>
+
+    <item android:title="Exam">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_menu_online_exam"
+                    android:icon="@drawable/ic_online_exam"
+                    android:title="Online Exam" />
+
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="App">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_chngpass"
+                    android:icon="@drawable/password_lock"
+                    android:title="Change Password" />
+
+                <item
+                    android:id="@+id/nav_aboutus"
+                    android:icon="@mipmap/ic_user"
+                    android:title="About Us" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@mipmap/ic_lock"
+                    android:title="Logout" />
+            </group>
+
+        </menu>
+    </item>
+
+
+    <item android:title="Library"
+        android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/nav_bookavail"
+                android:icon="@drawable/ic_menu_share"
+                android:visible="false"
+                android:title="Book Availability" />
+            <item
+                android:id="@+id/chaturthi"
+                android:icon="@drawable/ic_menu_share"
+                android:visible="false"
+                android:title="Chaturthi" />
+
+            <item
+                android:id="@+id/nav_bookreq"
+                android:visible="false"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Book Requisition" />
+        </menu>
+    </item>
+
+</menu>

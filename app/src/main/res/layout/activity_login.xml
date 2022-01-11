@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgnew">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTint="@android:color/white"
+        android:indeterminateTintMode="src_atop" />
+
+
+    <RelativeLayout
+        android:id="@+id/rellay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/childimg"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/goingtoschool" />
+
+        <TextView
+            android:id="@+id/schoolname"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/childimg"
+            android:layout_alignBottom="@+id/childimg"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@+id/childimg"
+            android:layout_toRightOf="@+id/childimg"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="School Name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/white"
+        android:layout_below="@+id/rellay1"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/secondscreenlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/secondscreen"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/whitepatch">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtPassword"
+            android:layout_alignStart="@+id/edtPassword"
+            android:layout_marginTop="10dp"
+            android:foregroundGravity="center"
+            android:text="Show Password"
+            android:textColor="#000000" />
+
+
+        <TextView
+            android:id = "@+id/tv_forget"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_alignTop = "@+id/checkBox"
+            android:layout_alignBottom = "@+id/checkBox"
+            android:layout_alignParentEnd = "true"
+            android:fontFamily = "@font/spensans_regular"
+            android:gravity = "center_vertical"
+            android:text = "Forgot Password?"
+            android:textColor = "#000000"
+            />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtUsername"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/lock"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textColorHint="#000000" />
+
+        <ImageView
+            android:id="@+id/btnLogin"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/checkBox"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/loginbtn" />
+
+        <TextView
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_person_outline_black_24dp"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="3pt"
+            android:text="Username"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

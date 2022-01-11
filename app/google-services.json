@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "672442688005",
+    "firebase_url": "https://evolvuteacherapp.firebaseio.com",
+    "project_id": "evolvuteacherapp",
+    "storage_bucket": "evolvuteacherapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672442688005:android:e9bbc05179b6108b3b326c",
+        "android_client_info": {
+          "package_name": "in.aceventura.evolvuschool.teacherapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672442688005-5377cio0lbo1d7qtn628prf76l6i9vvl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.aceventura.evolvuschool.teacherapp",
+            "certificate_hash": "af3b31763645f3f48048cb49b0f07d4015cc4c90"
+          }
+        },
+        {
+          "client_id": "672442688005-31ap6fs0sgl2vtst7alk2cddf7rgvfpb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7_WXEocZ_qJlyVTPw6Xd7UcDGUlyZWkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672442688005-31ap6fs0sgl2vtst7alk2cddf7rgvfpb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

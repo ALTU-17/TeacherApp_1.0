@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#2831af</color>
+    <color name="colorPrimary">#274ad4</color>
+    <color name="colorAccent">#95A0F7</color>
+    <color name="primary_material_dark_1">#32a0bc</color>
+    <color name="background_material_dark_1">#32a0bc</color>
+    <color name="primary_dark_material_dark_1">#5d8cd3</color>
+    <color name="primary_material_dark">#32a0bc</color>
+    <color name="accent_material_dark">#32a0bc</color>
+    <color name="primary_dark_material_light">#32a0bc</color>
+    <color name="orange">#fa8a3f</color>
+    <color name="orange1">#8886ff</color>
+    <color name="Red">#f90a1a</color>
+    <color name="green">#11872f</color>
+    <color name="white">#fff</color>
+    <color name="blue">#1b50ab</color>
+    <color name="black">#0e0e0e</color>
+    <color name="gray">#eae9e8</color>
+    <color name="purple">#950cea</color>
+    <color name="pink">#ea0c86</color>
+    <color name="yellow">#f7e709</color>
+    <color name="monpink">#ed3717</color>
+    <color name="tues">#0e94c6</color>
+    <color name="wed">#f4862b</color>
+    <color name="thu">#f12e58</color>
+    <color name="fri">#da31f4</color>
+    <color name="sat">#9846f7</color>
+    <color name="md_white_1000">#ffffff</color>
+    <color name="md_yellow_100">#fff9c4</color>
+    <color name="bottomactivateColor">#A44B75</color>
+</resources>

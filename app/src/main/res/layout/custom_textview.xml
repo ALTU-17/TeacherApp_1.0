@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="filename"
+        android:id="@+id/txtimagedisplay"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/ic_file_download"
+        android:drawableEnd="@drawable/ic_file_download"/>
+
+    <Button
+        android:id="@+id/downlodpdfmultiple"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:background="@drawable/ic_file_download"
+        android:textColor="#fff"
+        />
+
+</LinearLayout>

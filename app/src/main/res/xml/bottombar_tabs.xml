@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@drawable/ic_dashboard"
+        id="@+id/tab_dashboard"
+        title="Dashboard"
+        />
+    <tab
+        icon="@drawable/calendar_datee"
+        id="@+id/tab_calendar"
+        title="Calendar" />
+    <tab
+        icon="@drawable/ic_profile_test"
+        id="@+id/tab_profile"
+        title="Profile" />
+</tabs>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="6dp"
+android:orientation="vertical">
+
+<RelativeLayout
+    android:id="@+id/relative_cart"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/txtimagenamedisplay"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="FILENAME"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="2dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="2dp" />
+    <ImageView
+        android:id="@+id/imgcancelpdf"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@id/txtimagenamedisplay"
+        android:layout_toRightOf="@+id/txtimagenamedisplay"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="visible"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/ic_cancel_black_24dp"
+        android:layout_toEndOf="@+id/txtimagenamedisplay"
+        android:layout_marginStart="15dp" />
+
+    <Button
+        android:layout_alignParentEnd="true"
+        android:id="@+id/downloadpdf"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/imgcancelpdf"
+        android:background="@drawable/ic_file_download"
+        android:gravity="center_vertical"
+        android:layout_marginStart="15dp"
+/>
+    <!--android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"-->
+
+</RelativeLayout>
+<!--  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:visibility="gone"
+      android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/txtimagenamedisplay"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="fileNAME"
+          android:layout_margin="10dp"
+          />
+
+      <Button
+          android:id="@+id/cancelimage"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:visibility="visible"
+          android:layout_gravity="center"
+          android:frontbackground="@drawable/download"
+          android:textColor="#fff"
+          />
+  </LinearLayout>-->
+
+</RelativeLayout>

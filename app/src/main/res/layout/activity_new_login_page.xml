@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@drawable/bgnew">
+
+    <ProgressBar
+        android:id = "@+id/progressBar"
+        android:layout_width = "50dp"
+        android:layout_height = "50dp"
+        android:layout_centerInParent = "true"
+        android:indeterminateTint = "@android:color/white" />
+
+
+    <RelativeLayout
+        android:id = "@+id/logo1"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:layout_above = "@+id/wp">
+
+        <ImageView
+            android:id = "@+id/logo"
+            android:layout_width = "200dp"
+            android:layout_height = "140dp"
+            android:layout_alignParentTop = "true"
+            android:layout_centerHorizontal = "true"
+            android:src = "@drawable/evolvutransparent" />
+
+
+        <ImageView
+            android:id = "@+id/logonew"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_below = "@+id/tvVersion"
+            android:layout_alignParentBottom = "true"
+            android:layout_centerHorizontal = "true"
+            android:src = "@drawable/teacherbb" />
+
+        <TextView
+            android:id = "@+id/starttext"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_below = "@id/logo"
+            android:layout_marginBottom = "20dp"
+            android:gravity = "center"
+            android:padding = "2pt"
+            android:text = "Seamless way to communicate with Parents"
+            android:textColor = "@color/white"
+            android:textSize = "20sp"
+            android:typeface = "sans" />
+
+        <TextView
+            android:id = "@+id/tvVersion"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_below="@+id/starttext"
+            android:layout_centerHorizontal="true"
+            android:text = "v1.0.5"
+            android:textColor = "#fff"
+            android:textSize = "16sp"
+            android:textStyle = "bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id = "@+id/wp"
+        android:layout_width = "wrap_content"
+        android:layout_height = "200dp"
+        android:layout_alignParentBottom = "true"
+        android:background = "@drawable/whitepatch">
+
+        <EditText
+            android:id = "@+id/et_uid"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "50dp"
+            android:drawableStart = "@drawable/ic_person_outline_black_24dp"
+            android:drawableLeft = "@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding = "5dp"
+            android:hint = "Username"
+            android:inputType = "text"
+            android:padding = "3pt"
+            android:textColor = "#000000"
+            android:textColorHint = "#000000"
+            android:textSize = "15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id = "@+id/nextlay"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_alignParentBottom = "true">
+
+        <LinearLayout
+            android:id = "@+id/bottomlayout"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_centerVertical = "true"
+            android:layout_marginBottom = "20dp"
+            android:orientation = "horizontal"
+            android:padding = "1pt"
+            android:weightSum = "3">
+
+            <ImageView
+                android:id = "@+id/chemis"
+                android:layout_width = "60dp"
+                android:layout_height = "match_parent"
+                android:layout_gravity = "bottom"
+                android:layout_weight = "1"
+                android:background = "@drawable/chemistry"
+                android:padding = "5dp" />
+
+            <ImageView
+                android:id = "@+id/bt_Next"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity = "bottom"
+                android:layout_weight = "1"
+                android:background = "@drawable/nextimg" />
+
+            <ImageView
+                android:id = "@+id/cup"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity = "bottom"
+                android:layout_weight = "1"
+                android:background = "@drawable/cup"
+                android:padding = "5dp" />
+
+
+        </LinearLayout>
+
+        <!--VersionName and SupportMail-->
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_below = "@+id/bottomlayout"
+            android:gravity = "center">
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "v1.0.5"
+                android:textColor = "#000000"
+                android:textSize = "15sp"
+                android:textStyle = "bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id = "@+id/tvSupport"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:gravity = "center_vertical"
+                android:padding = "2dp"
+                android:text = "aceventuraservices@gmail.com"
+                android:textColor = "#4692C7"
+                android:textSize = "15sp"
+                android:textStyle = "bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    android:layout_margin = "8dp"
+    app:cardCornerRadius = "10dp">
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "vertical"
+        android:padding = "6dp">
+
+        <!--Row 1-->
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:padding = "2dp">
+
+            <TextView
+                android:id = "@+id/tv_QbName"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:fontFamily = "@font/opensans_semibold"
+                android:text = "Question Bank Name"
+                android:textColor = "#CB2447" />
+
+            <TextView
+                android:id = "@+id/vDivider1"
+                android:layout_width = "wrap_content"
+                android:layout_height = "20dp"
+                android:layout_toEndOf = "@+id/tv_QbName"
+                android:fontFamily = "sans-serif"
+                android:text = "  |  "
+                android:textColor = "#C7C1C3"
+                android:textSize = "13sp" />
+
+            <TextView
+                android:id = "@+id/tv_ExamName"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_toEndOf = "@+id/vDivider1"
+                android:fontFamily = "@font/spensans_regular"
+                android:text = "Exam" />
+
+        </RelativeLayout>
+
+        <!--Row 2-->
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:padding = "2dp">
+
+            <TextView
+                android:id = "@+id/tv_Class"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:fontFamily = "@font/spensans_regular"
+                android:text = "Class : " />
+
+            <TextView
+                android:id = "@+id/tv_ClassName"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_toEndOf = "@+id/tv_Class"
+                android:fontFamily = "@font/spensans_regular"
+                android:text = "1" />
+
+            <TextView
+                android:id = "@+id/vDivider2"
+                android:layout_width = "wrap_content"
+                android:layout_height = "20dp"
+                android:layout_toEndOf = "@+id/tv_ClassName"
+                android:fontFamily = "sans-serif"
+                android:text = "  |  "
+                android:textColor = "#C7C1C3"
+                android:textSize = "13sp" />
+
+            <TextView
+                android:id = "@+id/tv_Subject"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_toEndOf = "@+id/vDivider2"
+                android:fontFamily = "@font/spensans_regular"
+                android:text = "Subject : " />
+
+            <TextView
+                android:id = "@+id/tv_SubjectName"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_toEndOf = "@+id/tv_Subject"
+                android:fontFamily = "@font/spensans_regular"
+                android:text = "English" />
+
+        </RelativeLayout>
+
+        <!--Row 3-->
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:padding = "2dp">
+
+            <TextView
+                android:id = "@+id/tv_CreatedOn"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:fontFamily = "@font/spensans_regular"
+                android:text = "Created On : " />
+
+            <TextView
+                android:id = "@+id/tv_CreatedOnDate"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_toEndOf = "@+id/tv_CreatedOn"
+                android:fontFamily = "@font/spensans_regular"
+                android:text = "dd-MM-yyyy" />
+
+            <TextView
+                android:id = "@+id/vDivider3"
+                android:layout_width = "wrap_content"
+                android:layout_height = "20dp"
+                android:layout_toEndOf = "@+id/tv_CreatedOnDate"
+                android:fontFamily = "sans-serif"
+                android:text = "  |  "
+                android:textColor = "#C7C1C3"
+                android:textSize = "13sp" />
+
+            <TextView
+                android:id = "@+id/tv_Status"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_toEndOf = "@+id/vDivider3"
+                android:fontFamily = "@font/spensans_regular"
+                android:text = "Status : " />
+
+            <TextView
+                android:id = "@+id/tv_StatusName"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_toEndOf = "@+id/tv_Status"
+                android:fontFamily = "@font/spensans_regular"
+                android:text = "Complete" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "30dp"
+            android:layout_marginBottom = "5dp"
+            android:orientation = "horizontal"
+            android:padding = "4dp">
+
+            <!--View Icon-->
+            <LinearLayout
+                android:foreground = "?android:attr/selectableItemBackground"
+                android:id = "@+id/viewQBank"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity = "center"
+                android:layout_marginEnd = "8dp"
+                android:gravity = "center">
+
+                <ImageView
+                    android:layout_width = "22dp"
+                    android:layout_height = "22dp"
+                    android:layout_gravity = "center"
+                    android:layout_margin = "5dp"
+                    android:background = "@drawable/ic_visibility_24dp"
+                    android:contentDescription = "@string/app_name"
+                    android:visibility = "visible" />
+            </LinearLayout>
+
+            <!--Edit Icon-->
+            <LinearLayout
+                android:foreground = "?android:attr/selectableItemBackground"
+                android:id = "@+id/editQBank"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity = "center"
+                android:layout_marginEnd = "8dp"
+                android:gravity = "center">
+
+                <ImageView
+
+                    android:layout_width = "22dp"
+                    android:layout_height = "22dp"
+                    android:layout_margin = "5dp"
+                    android:background = "@drawable/ic_edit_24dp"
+                    android:contentDescription = "@string/app_name"
+                    android:visibility = "visible" />
+            </LinearLayout>
+
+            <!--Delete Icon-->
+            <LinearLayout
+                android:id = "@+id/deleteQBank"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity = "center"
+                android:gravity = "center"
+                android:foreground = "?android:attr/selectableItemBackground">
+
+                <ImageView
+
+                    android:layout_width = "22dp"
+                    android:layout_height = "22dp"
+                    android:layout_gravity = "center"
+                    android:layout_margin = "5dp"
+                    android:background = "@drawable/ic_delete_gray"
+                    android:contentDescription = "@string/app_name"
+                    android:visibility = "visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

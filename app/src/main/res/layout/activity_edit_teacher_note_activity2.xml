@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_edit_teacher_note_activity2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbckgrnd"
+    android:orientation="vertical"
+    tools:context="in.aceventura.evolvuschool.teacherapp.activities.EditTeacherNoteACtivity">
+
+    <ImageView
+        android:layout_marginLeft="5pt"
+        android:id="@+id/label1"
+        android:layout_marginTop="1pt"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:background="@drawable/createteachernoteslabel"
+        android:layout_marginStart="5pt" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/label1"
+        android:layout_margin="5pt"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true">
+            <LinearLayout
+                android:id="@+id/createLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:elevation="10dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_margin="2pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:visibility="gone"
+                            android:textColor="#ff0000" />
+
+                        <TextView
+                            android:id="@+id/textViewclassnm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="Class"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edt"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <Spinner
+                        android:id="@+id/sp_class1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:visibility="gone"
+                        android:spinnerMode="dropdown"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView43"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:visibility="gone"
+                            android:textColor="#ff0000" />
+
+                        <TextView
+                            android:id = "@+id/textViewsubnm"
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginLeft = "5dp"
+                            android:text = "Subject"
+                            android:textSize = "15sp" />
+                    </LinearLayout>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/edt1"
+                        />
+                    <Spinner
+                        android:id="@+id/sp_subject1"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height = "30dp"
+                        android:textSize = "15sp"
+                        android:spinnerMode = "dropdown"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ff0000" />
+
+                        <TextView
+                            android:id = "@+id/textdate"
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginStart = "5dp"
+                            android:text = "Date"
+                            android:textSize = "15sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/date1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="Select Date"
+                        android:inputType="textPersonName"
+                        android:padding = "7dp"
+                        android:textSize = "15sp"
+                        android:textColor = "@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textV23"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ff0000" />
+
+                        <TextView
+                            android:id="@+id/textViewdescrip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text = "Description"
+                            android:textSize = "15sp"
+                            android:layout_marginStart = "5dp" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et_notekDescription"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:layout_margin = "7dp"
+                        android:gravity = "top"
+                        android:hint = "Type here..."
+                        android:inputType = "textMultiLine"
+                        android:padding = "5pt"
+                        android:maxLength = "500"
+                        android:textColor = "@color/black"
+                        android:scrollbars = "vertical"
+                        android:textSize = "15sp" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+                <!--Attachments-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id = "@+id/selectimage"
+                        android:textColor = "@color/black"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:text = "Attach Document"
+                        android:textSize = "15sp"
+                        android:visibility = "visible"
+                        android:layout_margin = "5dp"
+                        android:layout_marginStart = "5dp"
+                        app:drawableRightCompat = "@drawable/ic_attach"
+                        app:drawableEndCompat = "@drawable/ic_attach" />
+
+                    <EditText
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:hint="Upload file"
+                        android:focusable="false"
+                        android:textSize="15sp"
+                        android:drawablePadding="2dp"
+                        android:drawableEnd="@drawable/ic_attach"/>
+
+                </LinearLayout>
+
+                <!-- Gallery Images -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/viewAttachmentlistview1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:orientation="vertical">
+
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        >
+                        <LinearLayout
+                            android:id="@+id/micici_listViewpdf1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+                <!-- All Attachments-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/viewAttachmentlistview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <!--Documents from FileManager-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        >
+                        <LinearLayout
+                            android:id="@+id/micici_listViewpdf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txturl12"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:layout_marginBottom = "20dp"
+                    android:layout_marginStart = "20dp"
+                    android:layout_marginTop = "20dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/updatenote"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_new1"
+                        android:text="Update"
+                        android:textColor="#FFF"
+                        android:textSize="15dp" />
+
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/resetnote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/reset"
+                        android:layout_marginEnd="20dp" />
+
+
+                    <!-- <Button
+                         android:id="@+id/backnote"
+                         android:layout_width="wrap_content"
+                         android:layout_height="35dp"
+                         android:background="@drawable/button_new1"
+                         android:text="BACK"
+                         android:textColor="#fff"
+                         android:textSize="15dp" />-->
+
+                    <Button
+                        android:id="@+id/file"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+
+                        android:background="@color/orange"
+                        android:text="Select"
+                        android:visibility="gone"
+                        android:textColor="#fff"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv1"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="test var 1"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="test var 2"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

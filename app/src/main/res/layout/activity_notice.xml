@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbckgrnd"
+    tools:context="in.aceventura.teacherapp.activities.NoticeActivity">
+
+
+    <include
+        android:id="@+id/icd_tb_homeworkdetails"
+        layout="@layout/header_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/icd_tb_homeworkdetails"
+       android:layout_above="@+id/bb_bookavailability"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:visibility="gone"
+           android:text="url"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="10dp"
+           android:orientation="horizontal"
+           android:weightSum="3">
+
+           <TextView
+               android:id="@+id/man6"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:text="*"
+               android:textColor="#e10d0d" />
+
+           <TextView
+               android:id="@+id/classView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_toEndOf="@+id/man6"
+               android:layout_toRightOf="@+id/man6"
+               android:layout_weight="0.3"
+               android:textSize="15sp"
+               android:text="Class: "
+               android:textColor="#ffffff" />
+           <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:frontbackground="@drawable/edittextstyle"
+            android:orientation="horizontal">-->
+
+           <Spinner
+               android:layout_alignStart="@+id/classView"
+               android:id="@+id/classspinnotice"
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/classView"
+               android:gravity="center"
+               android:layout_alignLeft="@+id/classView" />
+           <View
+               android:layout_alignStart="@+id/classspinnotice"
+               android:layout_width="wrap_content"
+               android:layout_height="0.5dp"
+               android:background="#c0c0c0"
+               android:layout_below="@id/classspinnotice"
+               android:layout_alignLeft="@+id/classspinnotice"
+               android:layout_alignEnd="@+id/classspinnotice"
+               android:layout_alignRight="@+id/classspinnotice" />
+
+
+           <TextView
+               android:id="@+id/searchbtn"
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:layout_below="@+id/classView"
+               android:layout_marginStart="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="5dp"
+               android:layout_toEndOf="@+id/classspinnotice"
+               android:layout_toRightOf="@+id/classspinnotice"
+               android:layout_weight="1"
+               android:drawableLeft="@drawable/ic_search_black_24dp"
+               android:textColor="#000" />
+       </RelativeLayout>
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+           <TextView
+               android:id="@+id/nodata"
+               android:text="No Records Found"
+               android:gravity="center"
+               android:textColor="@color/white"
+               android:textSize="20sp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               />
+
+           <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycleridnotice">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Add"
+           android:visibility="gone"
+           android:layout_gravity="center"
+           android:id="@+id/addtoexcel"/>
+
+   </LinearLayout>
+
+    <include
+        android:id="@+id/bb_bookavailability"
+        layout="@layout/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+
+</RelativeLayout>

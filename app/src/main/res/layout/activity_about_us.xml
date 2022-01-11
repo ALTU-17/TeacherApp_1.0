@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/mainbckgrnd">
+
+    <include
+        android:id="@+id/icd_tb_homeworkdetails"
+        layout="@layout/header_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/icd_tb_homeworkdetails"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/iv1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/evolvutransparent"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_margin="15dp">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv1"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_dark_material_dark_1"
+                    android:text="Evolvu - Smart Teacher App"/>
+
+
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/evolvu_smart_teacher_app_allows_teachers_to_powerfully_manage_their_school_work_from_within_their_mobile_devices_thereby_giving_them_more_freedom_for_other_tasks"/>
+
+
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/tv3"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/we_thank_you_teachers_for_your_support_and_helping_us_develop_a_better_app"/>
+
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/credit_goes_to_our_incredible_team_of_designer_solution_architect_project_manager_team_managers_and_developers"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="7dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/rate_us"
+                        android:textSize="16sp"
+                        />
+
+                    <ImageView
+                        android:visibility="visible"
+                        android:id="@+id/iv4"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/playstore"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:id="@+id/tv4"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/send_your_new_feature_request_on"
+                        android:layout_marginLeft="5dp" />
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:id="@+id/contactmail"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_aceventura_in"
+                        android:layout_marginStart="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="7dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_height="match_parent"
+                        android:text="@string/email"
+                        />
+
+                    <TextView
+                        android:id="@+id/emailat"
+                        android:textSize="16sp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/aceventuraservices_gmail_com"
+                        android:layout_marginStart="5dp"
+                        android:paddingStart="5dp" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginLeft="8dp"
+                    >
+                  <TextView
+                      android:id="@+id/tv6"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:textSize="16sp"
+                      android:gravity="center"
+                      android:layout_marginBottom="5dp"
+                      android:text="@string/follow_us_on"/>
+
+                  <ImageView
+                      android:id="@+id/iv2"
+                      android:layout_marginLeft="10dp"
+                      android:layout_width="20dp"
+                      android:layout_height="20dp"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginBottom="5dp"
+                      android:background="@drawable/facebook"
+                      android:layout_marginStart="10dp" />
+                  <ImageView
+                      android:id="@+id/iv3"
+                      android:layout_marginLeft="10dp"
+                      android:layout_width="20dp"
+                      android:layout_height="20dp"
+                      android:layout_marginBottom="5dp"
+                      android:layout_marginTop="5dp"
+                      android:background="@drawable/linkedin"
+                      android:layout_marginStart="10dp" />
+              </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bb_bookavailability"
+        layout="@layout/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

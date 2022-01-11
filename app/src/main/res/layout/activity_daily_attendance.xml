@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbckgrnd"
+    tools:context=".activities.DailyAttendanceActivity">
+
+    <include
+        android:id="@+id/icd_tb_homeworkdetails"
+        layout="@layout/header_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/icd_tb_homeworkdetails"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="3">
+
+        <Spinner
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/spinner_border1"
+            android:drawSelectorOnTop="true"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Class"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="*"
+            android:textColor="#fff" />
+
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+
+            android:layout_margin="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/spinner_border1"
+            android:drawableStart="@drawable/ic_date_range_black_24dp"
+            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+            android:gravity="center"
+            android:hint="*Date"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/studentattendancelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay"
+
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Select"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Roll No"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/studname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Name"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/absenty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Absentees"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lay1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:weightSum="1"
+            tools:context=".MainActivity">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".75" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight=".10"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2">
+
+
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="visible" />
+
+
+                <Button
+                    android:id="@+id/deleteAtteBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_new5"
+                    android:padding="5dp"
+                    android:text="Delete"
+                    android:textColor="#ffffff"
+                    android:visibility="gone" />
+
+
+                <Button
+                    android:id="@+id/updateAtteBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_new1"
+                    android:padding="5dp"
+                    android:text="Update"
+                    android:textColor="#ffffff" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center" />
+
+
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/icd_tb_homeworkdetails"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <Spinner
+            android:id="@+id/classSpinAttendance"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/classtvv"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/classtvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/man8"
+            android:layout_toRightOf="@+id/man8"
+            android:text="Class"
+            android:textColor="#ffffff"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/man8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* "
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/searchbtnattendance"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/classSpinAttendance"
+            android:layout_marginStart="10dp"
+            android:drawableStart="@drawable/ic_search_black_24dp"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/pickdate"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/classSpinAttendance"
+            android:layout_margin="5dp"
+            android:drawableEnd="@drawable/ic_date_range_black_24dp"
+            android:drawableRight="@drawable/ic_date_range_black_24dp"
+            android:gravity="center_vertical"
+            android:layout_toStartOf="@+id/searchbtnattendance"
+            android:text="* Select Date"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            tools:ignore="RtlHardcoded" />
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/classSpinAttendance"
+            android:layout_alignStart="@+id/classSpinAttendance"
+            android:layout_alignLeft="@+id/classSpinAttendance"
+            android:layout_alignEnd="@+id/classSpinAttendance"
+            android:layout_alignRight="@+id/classSpinAttendance"
+            android:background="@drawable/line"
+            tools:ignore="RtlHardcoded" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/pickdate"
+            android:layout_alignStart="@+id/pickdate"
+            android:layout_alignLeft="@+id/pickdate"
+            android:layout_alignEnd="@+id/pickdate"
+            android:layout_alignRight="@+id/pickdate"
+            android:background="@drawable/line"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/bb_bookavailability"
+        layout="@layout/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_margin="6dp"
+    android:background="@drawable/cardshape"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    android:weightSum ="2"
+    android:orientation ="horizontal"
+    android:baselineAligned = "false">
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_weight ="1"
+        android:orientation ="vertical">
+
+        <!--Row1-->
+        <LinearLayout
+            android:id="@+id/layone"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation ="horizontal">
+
+            <TextView
+                android:text="1"
+                android:layout_marginEnd="5dp"
+                android:textSize="18sp"
+                android:id = "@+id/tv_rollNo"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:fontFamily="@font/spensans_regular"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:text="Student Name"
+                android:textSize="18sp"
+                android:id = "@+id/tv_studentName"
+                android:ellipsize="end"
+                android:layout_marginEnd="1dp"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:fontFamily="@font/spensans_regular"
+                />
+
+
+        </LinearLayout>
+
+        <!--Row2-->
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:id="@+id/laytwo"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:orientation ="horizontal">
+
+            <TextView
+                android:text="Currently attempting question : "
+                android:layout_marginEnd="4dp"
+                android:textSize="18sp"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:fontFamily="@font/spensans_regular"
+                />
+
+            <TextView
+                android:text="3"
+                android:textSize="18sp"
+                android:id = "@+id/tv_question_no"
+                android:layout_marginEnd="1dp"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:fontFamily="@font/spensans_regular"/>
+
+        </LinearLayout>
+
+        <!--Row3-->
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:id="@+id/laythree"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:orientation ="horizontal">
+
+            <TextView
+                android:text="Status of exam : "
+                android:layout_marginEnd="4dp"
+                android:textSize="18sp"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:fontFamily="@font/spensans_regular"/>
+
+            <TextView
+                android:text="Not Started"
+                android:textSize="18sp"
+                android:id = "@+id/tv_status_of_exam"
+                android:layout_marginEnd="1dp"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:fontFamily="@font/spensans_regular"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

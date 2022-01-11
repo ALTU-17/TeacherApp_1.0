@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbckgrnd"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomePageDrawerActivity"
+    tools:showIn="@layout/app_bar_home_page_drawer">
+
+    <TextView
+        android:id="@+id/usernm1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_above = "@+id/footer"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:layout_marginTop = "10pt">
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "vertical"
+            android:gravity = "center"
+            android:visibility = "visible">
+
+            <!--1st row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <!--Teacher Note-->
+                <androidx.cardview.widget.CardView
+                    android:foreground = "?android:attr/selectableItemBackground"
+                    android:id="@+id/noteCardView"
+                    android:layout_width="125dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius = "5pt">
+
+                    <RelativeLayout
+                        android:background="@drawable/card"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+
+                        <ImageView
+                            android:id = "@+id/tnote"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="7dp"
+                            android:padding="10dp"
+                            android:layout_centerHorizontal = "true"
+                            android:background="@drawable/teacher"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Teacher Note"
+                            android:textSize="12sp"
+                            android:textStyle = "bold"
+                            android:layout_below = "@+id/tnote"
+                            android:layout_centerHorizontal = "true" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:visibility="gone"
+                            android:background="@color/gray" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--Homework-->
+                <androidx.cardview.widget.CardView
+                    android:foreground = "?android:attr/selectableItemBackground"
+                    android:id="@+id/homeworkcardView"
+                    android:layout_width="125dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5pt"
+                    >
+
+                    <RelativeLayout
+                        android:background="@drawable/card"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity = "center">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="10dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/books"
+                            android:layout_centerHorizontal = "true"
+                            android:id = "@+id/tHw"
+                            />
+
+                        <TextView
+                            android:layout_centerHorizontal = "true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Homework"
+                            android:textSize="12sp"
+                            android:textStyle = "bold"
+                            android:layout_below = "@+id/tHw" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:visibility="gone"
+                            android:layout_margin="10dp"
+                            android:background="@color/gray" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!--2nd Row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:foreground = "?android:attr/selectableItemBackground"
+                    android:id="@+id/remarkCardView"
+                    android:layout_width="125dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5pt"
+                    >
+
+                    <RelativeLayout
+                        android:background="@drawable/card"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+
+                        <ImageView
+                            android:id = "@+id/tRem"
+                            android:layout_centerHorizontal = "true"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="10dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/notepad"
+                            />
+
+                        <TextView
+                            android:layout_below = "@+id/tRem"
+                            android:layout_centerHorizontal = "true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Remark"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:visibility="gone"
+                            android:layout_margin="10dp"
+                            android:background="@color/gray" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:foreground = "?android:attr/selectableItemBackground"
+                    android:id="@+id/StaffNoticeView"
+                    android:layout_width="125dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5pt"
+                    >
+
+                    <RelativeLayout
+                        android:background="@drawable/card"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:id = "@+id/tNotice"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="10dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_centerHorizontal = "true"
+                            android:background="@drawable/chat"
+                            />
+
+                        <TextView
+                            android:layout_centerHorizontal = "true"
+                            android:layout_below = "@+id/tNotice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="Notice/SMS Staff"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height = "1dp"
+                            android:visibility = "gone"
+                            android:layout_margin = "10dp"
+                            android:background = "@color/gray" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!--3rd Row-->
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:orientation = "horizontal"
+                android:gravity = "center">
+
+                <androidx.cardview.widget.CardView
+                    android:foreground = "?android:attr/selectableItemBackground"
+                    android:id = "@+id/dailyAttendanceCardView"
+                    android:layout_width = "125dp"
+                    android:layout_height = "115dp"
+                    android:layout_margin = "10dp"
+                    app:cardCornerRadius = "5pt">
+
+
+                    <RelativeLayout
+                        android:background = "@drawable/card"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        android:gravity = "center">
+
+
+                        <ImageView
+                            android:id = "@+id/tDaily"
+                            android:layout_width = "60dp"
+                            android:layout_height = "60dp"
+                            android:background = "@drawable/calendar"
+                            android:padding = "10dp"
+                            android:layout_centerHorizontal = "true"
+                            android:layout_marginTop = "7dp" />
+
+                        <TextView
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginTop = "10dp"
+                            android:text = "Daily Attendance"
+                            android:textSize = "12sp"
+                            android:textStyle = "bold"
+                            android:layout_below = "@+id/tDaily"
+                            android:layout_centerHorizontal = "true" />
+
+                        <View
+                            android:layout_width = "match_parent"
+                            android:layout_height = "1dp"
+                            android:layout_margin = "10dp"
+                            android:background = "@drawable/cardshapenew"
+                            android:visibility = "gone" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:foreground = "?android:attr/selectableItemBackground"
+                    android:id = "@+id/leaveCardview"
+                    android:layout_width = "125dp"
+                    android:layout_height = "115dp"
+                    android:layout_margin = "10dp"
+                    app:cardCornerRadius = "5pt">
+
+                    <RelativeLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        android:gravity = "center"
+                        android:orientation = "vertical">
+
+                        <ImageView
+                            android:id = "@+id/tLeave"
+                            android:layout_width = "60dp"
+                            android:layout_centerHorizontal = "true"
+                            android:layout_height = "60dp"
+                            android:background = "@drawable/leave_application_icon"
+                            android:padding = "10dp"
+                            android:layout_marginTop = "7dp" />
+
+                        <TextView
+                            android:layout_below = "@+id/tLeave"
+                            android:layout_centerHorizontal = "true"
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginTop = "7dp"
+                            android:text = "Leave Application"
+                            android:textSize = "13sp"
+                            android:textStyle = "bold"
+                            android:gravity = "center" />
+
+                        <View
+                            android:layout_width = "match_parent"
+                            android:layout_height = "1dp"
+                            android:layout_margin = "10dp"
+                            android:visibility = "gone" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <!--Moved to OnlineExamDashboard-->
+            <!--4th Row-->
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:gravity = "center_horizontal"
+                android:orientation = "horizontal">
+
+                <!--Online Exam-->
+                <androidx.cardview.widget.CardView
+                    android:foreground = "?android:attr/selectableItemBackground"
+                    android:id = "@+id/OnlineExamCard"
+                    android:layout_width = "125dp"
+                    android:layout_height = "115dp"
+                    android:layout_margin = "10dp"
+                    app:cardCornerRadius = "5pt">
+
+                    <LinearLayout
+                        android:background = "@drawable/card"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        android:gravity = "center"
+                        android:orientation = "vertical">
+
+                        <ImageView
+                            android:layout_width = "60dp"
+                            android:layout_height = "60dp"
+                            android:padding = "10dp"
+                            android:layout_marginTop = "7dp"
+                            android:background = "@drawable/online_exam"
+                            android:contentDescription = "@string/app_name" />
+
+                        <TextView
+                            android:layout_width = "wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop = "10dp"
+                            android:text = "Online Exam"
+                            android:textSize = "12sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:visibility="gone"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!--Evaluation-->
+                <androidx.cardview.widget.CardView
+                    android:foreground = "?android:attr/selectableItemBackground"
+                    android:id = "@+id/evaluationCardView"
+                    android:layout_width = "125dp"
+                    android:layout_height = "115dp"
+                    android:layout_margin = "10dp"
+                    app:cardCornerRadius = "5pt"
+                    android:visibility = "visible">
+
+                    <RelativeLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        android:gravity = "center"
+                        android:orientation = "vertical">
+
+                        <ImageView
+                            android:id = "@+id/img_evaluation"
+                            android:layout_width = "60dp"
+                            android:layout_centerHorizontal = "true"
+                            android:layout_height = "60dp"
+                            android:background = "@drawable/leave_application_icon"
+                            android:padding = "10dp"
+                            android:layout_marginTop = "7dp" />
+
+                        <TextView
+                            android:layout_below = "@+id/img_evaluation"
+                            android:layout_centerHorizontal = "true"
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginTop = "7dp"
+                            android:text = "Question Bank Evaluation"
+                            android:textSize = "13sp"
+                            android:textStyle = "bold"
+                            android:gravity = "center" />
+
+                        <View
+                            android:layout_width = "match_parent"
+                            android:layout_height = "1dp"
+                            android:layout_margin = "10dp"
+                            android:visibility = "gone" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <!--Moved to OnlineExamDashboard-->
+            <!--5th Row-->
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:gravity = "center_horizontal"
+                android:orientation = "horizontal">
+
+                <!--Allot De-allot Card-->
+                <androidx.cardview.widget.CardView
+                    android:foreground = "?android:attr/selectableItemBackground"
+                    android:id = "@+id/allotDeallotCard"
+                    android:layout_width = "125dp"
+                    android:layout_height = "115dp"
+                    android:layout_margin = "10dp"
+                    app:cardCornerRadius = "5pt">
+
+                    <LinearLayout
+                        android:background = "@drawable/card"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        android:gravity = "center"
+                        android:orientation = "vertical">
+
+                        <ImageView
+                            android:layout_width = "60dp"
+                            android:layout_height = "60dp"
+                            android:padding = "10dp"
+                            android:layout_marginTop = "7dp"
+                            android:background = "@drawable/notepad1"
+                            android:contentDescription = "@string/app_name" />
+
+                        <TextView
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginTop = "10dp"
+                            android:text = "@string/allot_deallot"
+                            android:textSize = "12sp"
+                            android:textStyle = "bold" />
+
+                        <View
+                            android:layout_width = "match_parent"
+                            android:layout_height = "1dp"
+                            android:layout_margin = "10dp"
+                            android:visibility = "gone"
+                            android:background = "@color/gray" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--Monitor Ongoing Exam Card-->
+                <androidx.cardview.widget.CardView
+                    android:foreground = "?android:attr/selectableItemBackground"
+                    android:id = "@+id/monitorExamCard"
+                    android:layout_width = "125dp"
+                    android:layout_height = "115dp"
+                    android:layout_margin = "10dp"
+                    app:cardCornerRadius = "5pt">
+
+                    <LinearLayout
+                        android:background = "@drawable/card"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        android:gravity = "center"
+                        android:orientation = "vertical">
+
+                        <ImageView
+                            android:layout_width = "60dp"
+                            android:layout_height = "60dp"
+                            android:padding = "10dp"
+                            android:layout_marginTop = "7dp"
+                            android:background = "@drawable/notepad1"
+                            android:contentDescription = "@string/app_name" />
+
+                        <TextView
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginTop = "10dp"
+                            android:text = "@string/monitor_ongoing_exam"
+                            android:textSize = "12sp"
+                            android:textStyle = "bold" />
+
+                        <View
+                            android:layout_width = "match_parent"
+                            android:layout_height = "1dp"
+                            android:layout_margin = "10dp"
+                            android:visibility = "gone"
+                            android:background = "@color/gray" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

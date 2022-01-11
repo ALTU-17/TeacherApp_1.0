@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@drawable/mainbckgrnd">
+
+    <ImageView
+        android:id = "@+id/label1"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "5pt"
+        android:layout_marginLeft = "5pt"
+        android:background = "@drawable/createteachernoteslabel"
+        android:visibility = "gone" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@+id/label1"
+        android:layout_gravity = "center"
+        android:layout_margin = "5pt"
+        app:cardCornerRadius = "15dp">
+
+        <ScrollView
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:scrollbars = "none">
+
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_margin = "5dp"
+                android:orientation = "vertical"
+                android:padding = "10dp">
+
+                <LinearLayout
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:orientation = "vertical"
+                    android:padding = "3dp">
+
+                    <LinearLayout
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:orientation = "horizontal">
+
+                        <TextView
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:text = "*"
+                            android:textColor = "#ff0000"
+                            android:visibility = "gone" />
+
+                        <TextView
+                            android:layout_width = "match_parent"
+                            android:layout_height = "match_parent"
+                            android:layout_marginStart = "5dp"
+                            android:layout_marginLeft = "5dp"
+                            android:text = "Class"
+                            android:textColor = "@color/black"
+                            android:textSize = "15sp"
+                            tools:ignore = "RtlHardcoded" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id = "@+id/txtselectclassremark1"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        android:visibility = "visible" />
+
+                    <Spinner
+                        android:id = "@+id/sp_class1"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "30dp"
+                        android:background = "#F5F5F5"
+                        android:textSize = "15sp"
+                        android:visibility = "gone" />
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id = "@+id/classSpinremk"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "30dp"
+                    android:layout_margin = "7dp"
+                    android:layout_weight = "1"
+                    android:background = "@drawable/edittextstyle"
+                    android:drawSelectorOnTop = "true"
+                    android:visibility = "gone" />
+
+                <LinearLayout
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:orientation = "vertical">
+
+                    <LinearLayout
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:layout_marginTop = "10dp"
+                        android:orientation = "horizontal">
+
+                        <TextView
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:text = "*"
+                            android:textColor = "#ff0000"
+                            android:visibility = "gone" />
+
+                        <TextView
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginStart = "5dp"
+                            android:layout_marginLeft = "5dp"
+                            android:text = "Subject"
+                            android:textColor = "@color/black"
+                            android:textSize = "15sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id = "@+id/txtselectsubrmk1"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent" />
+
+                    <Spinner
+                        android:id = "@+id/sp_subject1"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "30dp"
+                        android:background = "#F5F5F5"
+                        android:textSize = "15sp"
+                        android:visibility = "gone" />
+
+                </LinearLayout>
+
+                <Spinner
+
+                    android:id = "@+id/subjectSpinrmk"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "30dp"
+                    android:layout_margin = "7dp"
+                    android:background = "@drawable/edittextstyle"
+                    android:drawSelectorOnTop = "true"
+                    android:visibility = "gone" />
+
+                <Spinner
+                    android:id = "@+id/studSpinrmk"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "30dp"
+                    android:layout_margin = "7dp"
+                    android:background = "@drawable/edittextstyle"
+                    android:drawSelectorOnTop = "true"
+                    android:visibility = "gone" />
+
+                <LinearLayout
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:orientation = "vertical">
+
+                    <LinearLayout
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:layout_marginTop = "10dp"
+                        android:orientation = "horizontal">
+
+                        <TextView
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:text = "*"
+                            android:textColor = "#ff0000"
+                            android:visibility = "gone" />
+
+                        <TextView
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:layout_marginStart = "5dp"
+                            android:layout_marginLeft = "5dp"
+                            android:text = "Student"
+                            android:textColor = "@color/black"
+                            android:textSize = "15sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id = "@+id/txtselectstudrmk1"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:orientation = "horizontal">
+
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:layout_marginTop = "5dp"
+                        android:text = "*"
+                        android:textColor = "#df0b0b" />
+
+                    <TextView
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:layout_marginTop = "5dp"
+                        android:text = "Subject of Remark"
+                        android:textColor = "#000" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id = "@+id/subrmk1"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_margin = "5dp"
+                    android:gravity = "start"
+                    android:hint = "Type here..."
+                    android:maxLength = "500"
+                    android:textSize = "15sp" />
+
+                <LinearLayout
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "7dp"
+                    android:orientation = "horizontal">
+
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:text = "*"
+                        android:textColor = "#ed0909" />
+
+                    <TextView
+                        android:id = "@+id/txtDeschmk"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:text = "Remark"
+                        android:textColor = "#000" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id = "@+id/edtrmk1"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_margin = "5dp"
+                    android:gravity = "start"
+                    android:hint = "Type here..."
+                    android:maxLength = "500"
+                    android:textSize = "15sp" />
+
+                <!--Observation-->
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/chkEditObservation"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:text="Observation"/>
+
+                </LinearLayout>
+
+                <!--Attachments-->
+                <LinearLayout
+                    android:id = "@+id/selectimage"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:gravity = "center"
+                    android:orientation = "vertical"
+                    android:visibility = "visible">
+
+                    <TextView
+
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:layout_margin = "5dp"
+                        android:layout_marginStart = "5dp"
+                        android:drawableEnd = "@drawable/ic_attach"
+                        android:text = "Attach Document"
+                        android:textColor = "@color/black"
+                        android:textSize = "15sp"
+                        android:visibility = "visible" />
+
+
+                    <!-- Gallery Images -->
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+
+                        android:orientation = "vertical">
+
+                        <ScrollView
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:layout_margin = "5dp">
+
+                            <LinearLayout
+                                android:id = "@+id/viewAttachmentlistview1"
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:orientation = "vertical">
+
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:layout_marginBottom = "7dp"
+                        android:orientation = "vertical">
+
+
+                        <ScrollView
+                            android:layout_width = "match_parent"
+                            android:layout_height = "match_parent"
+                            android:layout_margin = "5dp">
+
+                            <LinearLayout
+                                android:id = "@+id/micici_listViewpdf1"
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:orientation = "vertical">
+
+                            </LinearLayout>
+                        </ScrollView>
+
+                    </LinearLayout>
+                    <!-- All Attachments-->
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        android:orientation = "vertical">
+
+
+                        <ScrollView
+                            android:layout_width = "match_parent"
+                            android:layout_height = "wrap_content"
+                            android:layout_margin = "5dp">
+
+                            <LinearLayout
+                                android:id = "@+id/viewAttachmentlistview"
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:orientation = "vertical">
+
+                            </LinearLayout>
+                        </ScrollView>
+
+                    </LinearLayout>
+
+                    <!--Documents from FileManager-->
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:orientation = "vertical">
+
+
+                        <ScrollView
+                            android:layout_width = "match_parent"
+                            android:layout_height = "match_parent"
+                            android:layout_margin = "5dp">
+
+                            <LinearLayout
+                                android:id = "@+id/micici_listViewpdf"
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:orientation = "vertical">
+
+                            </LinearLayout>
+                        </ScrollView>
+
+                    </LinearLayout>
+
+
+                    <!--
+                                        <EditText
+                                            android:layout_width = "match_parent"
+                                            android:layout_height = "wrap_content"
+                                            android:layout_margin = "7dp"
+                                            android:drawableEnd = "@drawable/ic_attach"
+                                            android:drawableRight = "@drawable/ic_attach"
+                                            android:drawablePadding = "2dp"
+                                            android:focusable = "false"
+                                            android:hint = "Upload file"
+                                            android:textSize = "15sp"
+                                            android:visibility = "gone" />
+                    -->
+
+                </LinearLayout>
+
+                <TextView
+                    android:id = "@+id/txturl12"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:visibility = "gone" />
+
+                <LinearLayout
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_gravity = "center"
+                    android:gravity = "center"
+                    android:orientation = "horizontal"
+                    android:weightSum = "2">
+
+                    <Button
+                        android:id = "@+id/btnsavermk1"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "match_parent"
+                        android:layout_gravity = "center"
+                        android:layout_weight = "1"
+                        android:background = "@drawable/save"
+                        android:gravity = "center" />
+
+                    <Button
+                        android:id = "@+id/btnReset"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "match_parent"
+                        android:layout_gravity = "center"
+                        android:layout_weight = "1"
+                        android:background = "@drawable/reset"
+                        android:gravity = "center" />
+
+                    <Button
+                        android:id = "@+id/btnbackrmk1"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "35dp"
+                        android:layout_margin = "15dp"
+                        android:background = "@drawable/button_new1"
+                        android:text = "Back"
+                        android:textColor = "@color/white"
+                        android:visibility = "gone" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

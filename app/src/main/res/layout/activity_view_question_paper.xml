@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@drawable/mainbckgrnd"
+    android:orientation = "vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:layout_gravity = "center"
+        android:layout_margin = "5pt"
+        app:cardCornerRadius = "15dp">
+
+        <ScrollView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content">
+
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_margin = "2pt"
+                android:orientation = "vertical"
+                android:padding = "2pt">
+
+                <LinearLayout
+                    android:layout_width = "match_parent"
+                    android:layout_height = "match_parent"
+                    android:orientation = "vertical">
+
+
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        android:orientation = "vertical">
+
+
+                        <LinearLayout
+                            android:layout_width = "match_parent"
+                            android:layout_height = "match_parent"
+                            android:orientation = "vertical"
+                            android:weightSum = "2">
+
+                            <!--Select Examination-->
+                            <RelativeLayout
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:layout_margin = "5dp"
+                                android:layout_weight = "1">
+
+
+                                <LinearLayout
+                                    android:id = "@+id/subLay1"
+                                    android:layout_width = "wrap_content"
+                                    android:layout_height = "wrap_content"
+                                    android:layout_marginStart = "5dp"
+                                    android:layout_marginTop = "5dp"
+                                    android:orientation = "horizontal">
+
+                                    <TextView
+                                        android:layout_width = "match_parent"
+                                        android:layout_height = "wrap_content"
+                                        android:layout_marginTop = "5dp"
+                                        android:text = "Examination"
+                                        android:textColor = "@color/black"
+                                        android:textSize = "16sp" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id = "@+id/tv_exam_name"
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "30dp"
+                                    android:layout_below = "@+id/subLay1"
+                                    android:layout_marginStart = "10dp"
+                                    android:layout_marginTop = "2dp"
+                                    android:textSize="16sp"
+                                    android:gravity="bottom"
+                                    />
+
+                                <View
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "1dp"
+                                    android:layout_below = "@id/tv_exam_name"
+                                    android:layout_alignStart = "@+id/tv_exam_name"
+                                    android:layout_alignParentEnd = "@+id/tv_exam_name"
+                                    android:background = "@drawable/line" />
+
+                            </RelativeLayout>
+
+                            <!--Select Class-->
+                            <RelativeLayout
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:layout_margin = "5dp"
+                                android:orientation = "horizontal">
+
+
+                                <LinearLayout
+                                    android:id = "@+id/subLay2"
+                                    android:layout_width = "wrap_content"
+                                    android:layout_height = "wrap_content"
+                                    android:layout_marginStart = "5dp"
+                                    android:layout_marginTop = "5dp"
+                                    android:orientation = "horizontal">
+
+                                    <TextView
+                                        android:layout_width = "match_parent"
+                                        android:layout_height = "wrap_content"
+                                        android:layout_marginTop = "5dp"
+                                        android:text = "Class &amp; Subject"
+                                        android:textColor = "@color/black"
+                                        android:textSize = "16sp" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id = "@+id/tv_class_name"
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "30dp"
+                                    android:layout_below = "@+id/subLay2"
+                                    android:layout_marginStart = "10dp"
+                                    android:gravity="bottom"
+                                    android:textSize="16sp"
+                                    />
+
+                                <View
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "1dp"
+                                    android:layout_below = "@id/tv_class_name"
+                                    android:layout_alignStart = "@+id/tv_class_name"
+                                    android:layout_alignParentEnd = "@+id/tv_class_name"
+                                    android:background = "@drawable/line" />
+
+                            </RelativeLayout>
+
+
+                            <!--QbName-->
+                            <RelativeLayout
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:layout_margin = "5dp"
+                                android:layout_weight = "1">
+
+                                <LinearLayout
+                                    android:id = "@+id/subLay4"
+                                    android:layout_width = "wrap_content"
+                                    android:layout_height = "wrap_content"
+                                    android:layout_marginStart = "5dp"
+                                    android:layout_marginTop = "5dp"
+                                    android:orientation = "horizontal">
+
+                                    <TextView
+                                        android:layout_width = "match_parent"
+                                        android:layout_height = "wrap_content"
+                                        android:layout_marginTop = "5dp"
+                                        android:text = "Question Bank Name"
+                                        android:textColor = "@color/black"
+                                        android:textSize = "16sp" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id = "@+id/tv_qb_name"
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "30dp"
+                                    android:layout_below = "@+id/subLay4"
+                                    android:layout_marginStart = "10dp"
+                                    android:gravity="bottom"
+                                    android:textSize="16sp"
+                                     />
+
+                                <View
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "1dp"
+                                    android:layout_below = "@id/tv_qb_name"
+                                    android:layout_alignStart = "@+id/tv_qb_name"
+                                    android:layout_alignParentEnd = "@+id/tv_qb_name"
+                                    android:background = "@drawable/line" />
+
+                            </RelativeLayout>
+
+                            <!--Weightage-->
+                            <RelativeLayout
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:layout_margin = "5dp"
+                                android:layout_weight = "1">
+
+                                <LinearLayout
+                                    android:id = "@+id/subLay5"
+                                    android:layout_width = "wrap_content"
+                                    android:layout_height = "wrap_content"
+                                    android:layout_marginStart = "5dp"
+                                    android:layout_marginTop = "5dp"
+                                    android:orientation = "horizontal">
+
+                                    <TextView
+                                        android:layout_width = "match_parent"
+                                        android:layout_height = "wrap_content"
+                                        android:layout_marginTop = "5dp"
+                                        android:text = "Max. Marks"
+                                        android:textColor = "@color/black"
+                                        android:textSize = "16sp" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id = "@+id/tv_marks"
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "30dp"
+                                    android:layout_below = "@+id/subLay5"
+                                    android:layout_marginStart = "10dp"
+                                    android:gravity="bottom"
+                                    android:textSize="16sp"
+                                    />
+
+                                <View
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "1dp"
+                                    android:layout_below = "@id/tv_marks"
+                                    android:layout_alignStart = "@+id/tv_marks"
+                                    android:layout_alignParentEnd = "@+id/tv_marks"
+                                    android:background = "@drawable/line" />
+
+                            </RelativeLayout>
+
+                            <!--Instructions-->
+                            <RelativeLayout
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:layout_margin = "5dp"
+                                android:layout_weight = "1">
+
+                                <LinearLayout
+                                    android:id = "@+id/subLay6"
+                                    android:layout_width = "wrap_content"
+                                    android:layout_height = "wrap_content"
+                                    android:layout_marginStart = "5dp"
+                                    android:layout_marginTop = "5dp"
+                                    android:orientation = "horizontal">
+
+                                    <TextView
+                                        android:layout_width = "match_parent"
+                                        android:layout_height = "wrap_content"
+                                        android:layout_marginTop = "5dp"
+                                        android:text = "Exam Instructions"
+                                        android:textColor = "@color/black"
+                                        android:textSize = "16sp" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_marginTop="10dp"
+                                    android:id = "@+id/tv_instructions"
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "wrap_content"
+                                    android:layout_below = "@+id/subLay6"
+                                    android:layout_marginStart = "10dp"
+                                    android:gravity="bottom"
+                                    android:textSize="16sp"
+                                     />
+
+                                <View
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "1dp"
+                                    android:layout_below = "@id/tv_instructions"
+                                    android:layout_alignStart = "@+id/tv_instructions"
+                                    android:layout_alignParentEnd = "@+id/tv_instructions"
+                                    android:background = "@drawable/line" />
+
+                            </RelativeLayout>
+
+                            <!--Add Notes-->
+                            <LinearLayout
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:layout_margin = "5dp"
+                                android:orientation = "vertical">
+
+                                <LinearLayout
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "wrap_content"
+                                    android:orientation = "horizontal"
+                                    android:layout_marginTop = "8dp"
+
+                                    >
+
+
+                                    <TextView
+                                        android:id = "@+id/addAttachments"
+                                        android:layout_width = "match_parent"
+                                        android:layout_height = "match_parent"
+                                        android:layout_marginStart = "5dp"
+                                        android:padding = "1dp"
+                                        android:text = "Attachments"
+                                        android:textColor = "@color/black"
+                                        android:textSize = "16sp" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width = "match_parent"
+                                    android:layout_height = "0.5dp"
+                                    android:layout_marginStart = "8dp"
+                                    android:layout_marginTop = "2dp"
+                                    android:layout_marginBottom = "1dp"
+                                    android:visibility="gone"
+                                    android:background = "@drawable/line" />
+
+                            </LinearLayout>
+
+                            <!--Download question_paper list-->
+                            <TextView
+                                android:padding="3dp"
+                                android:layout_marginTop = "15dp"
+                                android:id = "@+id/impLinksLabel"
+                                android:layout_width = "wrap_content"
+                                android:layout_height = "wrap_content"
+                                android:fontFamily = "@font/opensans_semibold"
+                                android:text = "Question Paper"
+                                android:textColor = "@color/black"
+                                android:textSize = "17sp"
+                                android:textStyle = "bold"
+                                android:visibility="gone"/>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id = "@+id/rv_quesPaper"
+                                android:layout_width = "match_parent"
+                                android:layout_height = "wrap_content"
+                                android:layout_marginTop = "8dp"
+                                android:layout_marginBottom = "10dp"
+                                android:layout_marginStart = "10dp"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+

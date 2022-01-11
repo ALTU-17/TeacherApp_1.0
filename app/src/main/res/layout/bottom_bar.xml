@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#5F97D0"
+    android:orientation="vertical">
+    <!-- This could be your fragment container, or something -->
+
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#5F97D0"
+        app:bb_activeTabColor="#ffffff"
+        app:bb_inActiveTabColor="#ffffff"
+        app:bb_tabXmlResource="@xml/bottombar_tabs" />
+
+<!-- app:bb_activeTabColor="#A44B75"-->
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="aceventuraservices@gmail.com "
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="10dp" />
+
+</LinearLayout>
